@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+/* 기본 레이아웃 */
+.wrapper{width:100%;overflow:hidden}
+.inner{position:relative;width:1400px;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}
+#container{width:100%;overflow:hidden}
+
+/* ----------- header ----------- */
+/* tnb */
+.tnb{}
+
+
+
+
+
+
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1.1) translateY(-10px);
+            transform: scale(1.1) translateY(-10px);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(32px); opacity:0;
+            transform: translateY(32px); opacity:0;
+  }
+  100% {
+    -webkit-transform: translateY(0);opacity:1;
+            transform: translateY(0);opacity:1;
+  }
+}

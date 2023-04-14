@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* SCoreDream */
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(font/SCDream4.ttf) format('ttf'),
+         url(font/SCDream4.woff2) format('woff2'),
+         url(font/SCDream4.woff) format('woff');
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 500; 
+    font-style: normal; 
+    src: url(font/SCDream5.ttf) format('ttf'),
+         url(font/SCDream5.woff2) format('woff2'),
+         url(font/SCDream5.woff) format('woff');
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 600; 
+    font-style: normal; 
+    src: url(font/SCDream6.ttf) format('ttf'),
+         url(font/SCDream6.woff2) format('woff2'),
+         url(font/SCDream6.woff) format('woff');
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 700; 
+    font-style: normal; 
+    src: url(font/SCDream7.ttf) format('ttf'),
+         url(font/SCDream7.woff2) format('woff2'),
+         url(font/SCDream7.woff) format('woff');
+}
+
+/* GmarketSans */
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(font/GmarketSansLight.ttf) format('ttf'),
+         url(font/GmarketSansLight.woff2) format('woff2'),
+         url(font/GmarketSansLight.woff) format('woff');
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500; 
+    font-style: normal; 
+    src: url(font/GmarketSansMedium.ttf) format('ttf'),
+         url(font/GmarketSansMedium.woff2) format('woff2'),
+         url(font/GmarketSansMedium.woff) format('woff');
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 600; 
+    font-style: normal; 
+    src: url(font/GmarketSansBold.ttf) format('ttf'),
+         url(font/GmarketSansBold.woff2) format('woff2'),
+         url(font/GmarketSansBold.woff) format('woff');
+}
