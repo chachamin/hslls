@@ -93,5 +93,11 @@
 .news_tab > li:first-child > .tab_cont{display:block}
 
 
+.news_list .latest .date_box {width: 13%;text-align: center;position: relative;}
+.news_list .latest .date_box::after {content: '';display: block;width:1px;height: 100%;background: #d4d4d4;position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+.news_list .latest .date_box .day {font-size: 1.875em;font-weight: 500;}
+
+
+
 /* 알림배너 */
 .news_wrap .allim_b {padding: 32px;width: calc((100% / 3) - (32px * 8 / 12));}
