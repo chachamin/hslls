@@ -1,77 +1,83 @@
 @charset "utf-8";
 
-/* main_sec01 */
-.main_slide_wrap {padding: 80px 0;}
+
+/* ----------- main_sec01 ----------- */
+.main_sec01 {background: #e9f3ff;}
+.main_slide_wrap {padding: 80px 0 0 0;position: relative;min-height: 806px;}
 
 /* 타이틀 */
-.main_slide_wrap .main_tit p.fb3 {font-size: 3.438em;color: #562cb5;font-weight: 700;}
-.main_slide_wrap .main_tit p span {color: #004adf;font-weight: 700;}
-.main_slide_wrap .main_tit p.fb1 {font-size: 1.125em;margin-top: 20px;}
+.main_slide_wrap .main_tit .fb3 {font-size: 3.438em;color: #562cb5;font-weight: 700;}
+.main_slide_wrap .main_tit span {color: #004adf;font-weight: 700;}
+.main_slide_wrap .main_tit .fb1 {font-size: 1.125em;margin-top: 20px;}
 
 /* 자주찾는메뉴 - 강좌 정보 */
-.main_slide_wrap > .dp_flex {margin-top:45px;}
+.main_slide_wrap > .dp_flex {margin-top:30px;}
 
 /* 자주찾는 메뉴 */
 .main_slide_wrap .box_l {width: 25%;padding-right: 40px;min-height: 500px;}
 .main_slide_wrap .box_l .menu_link {border-radius: 15px;background: #ffd451;padding:20px;}
 .main_slide_wrap .box_l .menu_link li {margin-bottom:20px;}
 .main_slide_wrap .box_l .menu_link li:last-child {margin-bottom:0;}
-.main_slide_wrap .box_l .menu_link li a {width: 100%;height: 75px; display: block; border-radius: 10px;padding:27px 10px 0 94px;background: #fff2b9;font-size: 1.125em;}
+.main_slide_wrap .box_l .menu_link li a {width: 100%;height: 76px; display: block; border-radius: 10px;padding:27px 10px 0 94px;background: #fff2b9;font-size: 1.125em;}
 .main_slide_wrap .box_l .menu_link li.row_br a {padding:17px 10px 0 94px;}
 
 /* 강좌정보 */
-.main_slide_wrap .box_r {width: 75%;border-radius: 15px;background-color: #fff;padding: 0 16px;}
-.box_r .lecture_tab_box {position: relative;min-height: 500px;width: 100%;}
+.main_slide_wrap .box_r {width: 75%;border-radius: 15px;background-color: #fff;padding: 20px 16px 0;position: relative;}
+.main_slide_wrap .box_r::after {content: '';display: block;width: 100%;height: 1px;background-color: #ddd;position: absolute;top: 70px;left: 0;}
+.box_r .lecture_tab_box {position: relative;min-height: 480px;width: 100%;}
 
-.box_r .lecture_tab_box .font_g {font-size: 1.750em;font-weight: 600;}
+.box_r .lecture_tab_box > .font_g {font-size: 1.750em;font-weight: 600;padding-left: 16px;}
 .box_r .lecture_tab_box .de_orange {font-weight: 600;color: #ff3600;}
 
-.le_tabs {position: absolute;left: 120px;top: 0;width: 100%;}
+.le_tabs {position: absolute;left:0;top: -4px;width: 100%;padding-left: 140px;}
 .le_tabs > li {display: inline-block;}
 .le_tabs > li >a.tab_link {position: relative;display: block;border-radius: 17px;color: #fff;background: #004adf;width:85px;text-align: center;height: 35px;line-height: 35px;}
+.le_tabs .tab_cont{display: none;width: 100%;position: absolute;left: 0;top: 45px;padding: 0 16px;}
+.le_tabs > li:first-child > .tab_cont{display:block}
 
 /* 강좌정보 슬라이드 */
 .le_tabs .le_sd {margin: 38px -16px;}
 .le_tabs .le_sd .item_box {padding: 0 16px;}
-.le_tabs .le_sd .item {background: #f67117;border-radius: 10px;display: block;padding: 67px 30px 20px;}
-.le_tabs .le_sd .item .le_tit {font-size: 1.438em;color: #fff;line-height:1.5rem;}
+.le_tabs .le_sd .item {background: #f67117;border-radius: 10px;display: block;padding: 67px 30px 20px;position: relative;min-height: 352px;}
+.le_tabs .le_sd .item .tag {background: #fff; color: #f67117;padding: 6px 10px;font-size: 0.875em;border-radius: 5px;position: absolute;top: 20px;left: 30px;font-weight: 500;}
+
+.le_tabs .le_sd .item .le_tit {font-size: 1.375em;color: #fff;line-height:1.7rem;font-weight: 600;}
 .le_tabs .le_sd .item .det_info {margin-top:25px;color: #fff;}
-.le_tabs .le_sd .item .det_info .dp_flex {padding-left: 20px;}
-.le_tabs .le_sd .item .det_info .info_tit {width: 10%;}
-.le_tabs .le_sd .item .det_info .info_text {width: 80%;}
+.le_tabs .le_sd .item .det_info .dp_flex {padding-left: 20px;margin-bottom: 10px;}
+.le_tabs .le_sd .item .det_info .info_tit {width: 17%;}
+.le_tabs .le_sd .item .det_info .info_text {width: 83%;}
+.le_tabs .le_sd .item .btn_more_le {width: 80%;height: 50px;line-height: 50px;color: #696969;background: #fff;border-radius: 10px;position: absolute;left: 50%;bottom: 20px;transform: translateX(-50%);text-align: center;}
+
+.le_sd_wrap .slick-nav{position:relative;}
+.le_sd_wrap .slick-nav a{position:absolute;z-index: 10;}
+.le_sd_wrap .slick-nav a.slick-prev,
+.le_sd_wrap .slick-nav a.slick-next{top:140px;width:60px;height:60px;background:#fff;border:1px solid rgba(0, 0, 0, .2);border-radius:50%; box-shadow: 0 0 5px #efefef;}
+.le_sd_wrap .slick-nav a.slick-prev{left:-48px;background-position:-2px -52px;}
+.le_sd_wrap .slick-nav a.slick-next{right:-48px;background-position:-52px -52px;}
+
+/* 강좌정보 더보기&검색 */
+.lecture_tab_box .btn {width: 35px;height: 35px;border-radius: 50%;background: #004adf;position: absolute;top: -4px; left: 410px;}
+
+.lecture_tab_box .search_a {display: flex;position: absolute;top: -4px;right: 16px;border-radius: 10px;min-width: 308px;}
+.lecture_tab_box .search_a input {height: 35px;border: none;background: #e9f3ff;border-radius: 10px;min-width: 280px;}
+.lecture_tab_box .search_a .btn_search {width: 35px;width: 35px;height: 35px;border-radius: 50%;background: #004adf;position: absolute;top: 0;right: 10px;}
+
+/* 스크롤 */
+.scroll_ico {padding: 40px 5px 0;color: #3d3c3b;position: absolute;left: 50%;transform: translateX(-50%);bottom: 10px;}
+
+/* ----------- main_sec02 ----------- */
+
+.news_wrap {padding: 90px 0;}
+
+/* 소식&자료실 */
+.news_wrap .news_box {width: calc((100% / 1.5) - (32px * 4 / 12));border: 1px solid #ddd;border-radius: 15px;min-height: 350px;position: relative;}
+.news_tab {position: absolute;left:0;top: 25px;width: 100%;padding-left: 32px;}
+.news_tab > li {display: inline-block;}
+.news_tab > li >a.font_g {position: relative;display: block;font-size: 1.750em;font-weight: 600;}
+.news_tab > li >a.font_g .de_orange {font-weight: 600;color: #ff3600;}
+.news_tab .tab_cont{display: none;width: 100%;position: absolute;left: 0;top: 45px;padding: 0 32px;}
+.news_tab > li:first-child > .tab_cont{display:block}
 
 
-
-/* 화순의 숲 프로그램 슬라이드 */
-.pg_tabs .pg_sd{margin:32px -16px}
-.pg_tabs .pg_sd .item_box{padding:16px;min-height:249px;}
-.pg_tabs .pg_sd .item{position:relative;background:#fff;border-radius:14px;box-shadow:4px 6px 16px 0px rgb(92, 151, 0 ,.3);display:block;min-height:217px}
-.pg_tabs .pg_sd .item .pg_tit{padding:20px 0 16px;font-size:1.125rem;font-weight:700;line-height:1.5rem;}
-.pg_tabs .pg_sd .item .pg_tit p{font-weight:700;}
-.pg_tabs .pg_sd .item .pg_desc{font-size:0.875rem;color:#666;}
-
-.pg_tabs .sd_pg_forest .item .ico{width:36px;height:36px;border-radius:6px;background:#5c9700;}
-.pg_tabs .sd_pg_forest .item{padding:32px 24px;}
-.pg_tabs .sd_pg_wood .icon{position:absolute;top:32px;right:32px;}
-
-.pg_tabs .sd_pg_wood .item .pg_tit{padding:32px 24px 16px;}
-.pg_tabs .sd_pg_wood .pg_desc{padding:14px 24px;padding-top:16px;border-top:1px solid #eee;background:#faf7f4;border-radius:0 0 14px 14px}
-
-.pg_tabs .sd_pg_wood .pg_desc_list li{margin-bottom:4px;}
-.pg_tabs .sd_pg_wood .pg_desc_list li .ico{background:url('/_KOR/img/ico_pg_wood1.png') no-repeat center center #5a3d1c;width:26px;height:26px;border-radius:50%;}
-.pg_tabs .sd_pg_wood .pg_desc_list li .ico.ico2{background:url('/_KOR/img/ico_pg_wood2.png') no-repeat center center #5a3d1c;}
-.pg_tabs .sd_pg_wood .pg_desc_list li .ico.ico3{background:url('/_KOR/img/ico_pg_wood3.png') no-repeat center center #5a3d1c;}
-.pg_tabs .sd_pg_wood .pg_desc_list li .tit{font-weight:700;margin:0 16px;}
-.pg_tabs .sd_pg_wood .pg_desc_list li .con{max-width:61%}
-
-
-.pg_sd_wrap .slick-nav{position:absolute;right:0;top:-8px;background:#fff;height:44px;border-radius:46px;}
-.pg_sd_wrap .slick-nav a{width:44px;height:44px;vertical-align: text-top;}
-.pg_sd_wrap .slick-nav a.slick-prev{background-position:-198px -111px;}
-.pg_sd_wrap .slick-nav a.slick-next{background-position:-248px -111px;}
-.pg_sd_wrap .slick-nav a.slick-stop{background-position:-300px -111px;}
-.pg_sd_wrap .slick-nav a.slick-play{background-position:-348px -111px;}
-
-
-
-
+/* 알림배너 */
+.news_wrap .allim_b {padding: 32px;width: calc((100% / 3) - (32px * 8 / 12));}
