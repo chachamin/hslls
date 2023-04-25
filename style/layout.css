@@ -22,7 +22,7 @@
 /* gnb */
 #gnb{width:100%;position:relative;height: 90px;}
 /* #gnb > ul{margin:0 auto;text-align:center;} */
-#gnb > ul{margin:0 0 0 500px;text-align:center;}
+#gnb > ul{margin:0 0 0 680px;text-align:center;}
 #gnb > ul > li{display:inline-block;}
 #gnb > ul > .depth1 > a{position:relative;display:block;padding:32px 20px 32px;font-size:1.313rem;font-weight:600;}
 #gnb > ul > li > a:hover,
@@ -35,7 +35,7 @@
 #gnb .dep2Wrap .inner{padding-left:290px;}
 #gnb .dep2Wrap .inner:before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:#E9F3FF;}
 
-#gnb .dep2Wrap .dep2tit{position:absolute;top:0;left:0;height:100%;width:290px;padding-top:48px;background-color:#E9F3FF}
+#gnb .dep2Wrap .dep2tit{position:absolute;top:0;left:0;height:100%;width:290px;padding-top:48px;padding-left: 20px;background-color:#E9F3FF;}
 #gnb .dep2Wrap .dep2tit .heading_5{position:relative;margin-bottom:24px;padding-bottom:24px;font-weight:600;color: #004adf;}
 #gnb .dep2Wrap .dep2tit .heading_5:after{content:'';position:absolute;bottom:0;left:0;width:46px;height:2px;background:#333;}
 #gnb .dep2Wrap .dep2tit .body_2{color:#666;}
@@ -47,15 +47,17 @@
 #gnb .dep2Wrap.m6 .dep2tit{background:url('../img/gnbov_bg_06.png') 90% 90% no-repeat #E9F3FF;}
 
 #gnb .depth2{position:relative;top:0;padding:32px;min-height:250px;}
-#gnb .depth2 > li {float:left;width:calc((100% - 60px) / 4);}
-#gnb .depth2 > li:not(:last-child){margin-right:20px;}
-#gnb .depth2 > li > a{display:block;padding:12px 24px;margin-bottom:16px;font-weight:600;border:1px solid #ddd;border-radius:8px;background:url('../img/gnb_ov_arrow.png') no-repeat 90% center;transition: all 0.2s ease;color: #454240;}
+#gnb .depth2 > li {float:left;width:calc((100% - 96px) / 4);}
+#gnb .depth2 > li:not(:nth-child(4n)){margin-right:32px;}
+#gnb .depth2 > li > a{display:block;padding:12px 24px;margin-bottom:16px;font-weight:600;border:1px solid #ddd;border-radius:8px;transition: all 0.2s ease;color: #454240;position: relative;}
+#gnb .depth2 > li > a::after {content:'';display: block;width: 22px;height: 22px;background: url(../img/main_ir.png) -353px -208px no-repeat;position: absolute;top: 50%;right: 10%;transform: translateY(-50%);opacity: 0;transition: all 0.2s ease;}
 #gnb .depth2 > li > a:hover{background-color:#E9F3FF;border: 1px solid #004adf;}
-#gnb .depth2 > li > ul > li{margin:2px 0;}
+#gnb .depth2 > li > a:hover::after{opacity: 1;}
+/* #gnb .depth2 > li > ul > li{margin:2px 0;}
 #gnb .depth2 > li > ul > li{position:relative;padding-left:14px;margin:2px 0px;font-size:0.813rem;}
 #gnb .depth2 > li > ul > li:after{content:'';position:absolute;left:0;top:12px;width:4px;height:4px;background:#bbb;border-radius:50%}
 #gnb .depth2 > li > ul > li > a{display:block;padding:6px 0;transition: all 0.2s ease;}
-#gnb .depth2 > li > ul > li > a:hover{text-decoration:underline;color:#00a0c9;}
+#gnb .depth2 > li > ul > li > a:hover{text-decoration:underline;color:#00a0c9;} */
 #gnb .depth2:after{content:"";width:100%;display:block;visibility:hidden;clear:both;}
 
 /* .gnb_area .tmnBg {position: absolute;top: 130px;left: 0;width: 100%;height: 0px;background: #fff;z-index: 100;box-shadow: 6px 8px 10px 2px rgba(0, 0, 0, 0.1);} */
@@ -79,12 +81,15 @@
 .f_bottom {padding-top: 20px;}
 
 /* ----------- quick-menu ----------- */
-.quick_nav {position: fixed;bottom: 430px;right: 0;border-radius: 15px 0 0 15px;background: #562cb5;z-index: 99;}
+.quick_nav {position: fixed;bottom: 430px;right: 0;border-radius: 15px 0 0 15px;background: #562cb5;z-index: 79;}
 .quick_nav .qn_list {padding: 0 15px;}
 .quick_nav .qn_list li {border-bottom: 1px solid #fff;}
 .quick_nav .qn_list li:last-child {border-bottom: none;}
 .quick_nav .qn_list li a {display:block;padding: 60px 0 15px;color: #fff;position: relative;}
-.quick_nav .qn_list li a::after {content: '';display: block;width: 32px;height: 32px;background: #fff;position: absolute;top: 20px;left: 50%;transform: translateX(-50%);}
+.quick_nav .qn_list li a::after {content: '';display: block;width: 32px;height: 32px;background: url(../img/main_ir.png) -9px -213px no-repeat;position: absolute;top: 20px;left: 50%;transform: translateX(-50%);}
+.quick_nav .qn_list li:nth-child(2) a::after {background-position: -70px -213px;}
+
+
 
 /* ----------- loca_nav ----------- */
 
