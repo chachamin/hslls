@@ -89,7 +89,27 @@ $(document).ready(function(){
 		$(this).siblings('.slick-stop').css('display','none');
 	});
 
-	
+	// 강좌정보 tab
+	$('.le_tabs > li > a.tab_link').on('focus click' ,function(){
+		$(this).addClass('active');		
+		$(this).parent('li').siblings('li').find('a.tab_link').removeClass('active');		
+		$(this).parent('li').find('.tab_cont').css('display','block');
+		$(this).parent('li').siblings('li').find('.tab_cont').css('display','none');
+		$('.sd_le_main').slick("setPosition");
+	});
+
+	// 자연휴양림 tab
+	$('.news_tab_wrap > li > a.font_g').on('focus click' ,function(){
+		$(this).addClass('active');		
+		$(this).parent('li').siblings('li').find('a').removeClass('active');		
+		$(this).parent('li').find('div').css('display','block');
+		$(this).parent('li').siblings('li').find('div').css('display','none');
+		$(this).parent('li').find('a.more').css('display','block');
+		$(this).parent('li').siblings('li').find('a.more').css('display','none');
+	});
+
+
+
 });
 
 //  -------------------------- gnb  --------------------------
@@ -163,3 +183,5 @@ $(function () {
 		}
 	});
 });
+
+

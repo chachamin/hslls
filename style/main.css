@@ -2,7 +2,7 @@
 
 
 /* ----------- main_sec01 ----------- */
-.main_sec01 {background: #e9f3ff;}
+.main_sec01 {background: url(../img/main_bg.jpg) center -140px no-repeat #e9f3ff;}
 .main_slide_wrap {padding-top: 80px;position: relative;min-height: 806px;}
 
 /* 타이틀 */
@@ -47,9 +47,9 @@
 
 /* 강좌정보 슬라이드 */
 .le_tabs .le_sd {margin: 38px -16px;}
-.le_tabs .le_sd .item_box {padding: 0 16px;}
+.le_tabs .le_sd .item_box {padding: 0 16px;min-height: 352px;}
 .le_tabs .le_sd .item {background: #f67117;border-radius: 10px;display: block;padding: 67px 20px 20px;position: relative;min-height: 352px;}
-.le_tabs .le_sd .item .tag {background: #fff; color: #f67117;padding: 6px 10px;font-size: 0.875em;border-radius: 5px;position: absolute;top: 20px;left: 30px;font-weight: 500;}
+.le_tabs .le_sd .item .tag {background: #fff; color: #f67117;padding: 6px 10px;font-size: 0.875em;border-radius: 5px;position: absolute;top: 20px;left: 20px;font-weight: 500;}
 
 .le_tabs .le_sd .ongoing .item {background: #f67117;}
 .le_tabs .le_sd .ongoing .item .tag {color: #f67117;}
@@ -89,13 +89,14 @@
 .le_sd_wrap .slick-nav a.slick-next{right:-48px;background-position:-53px -139px;}
 
 /* 강좌정보없음 */
-.le_tabs .nothing {margin: 38px -16px;}
+.le_tabs .nothing {margin: 38px -16px; display: none;}
 .le_tabs .nothing .item_box {border: 1px solid #ddd;border-radius: 15px;width: 100%;height: 352px;text-align: center;padding-top: 230px;position: relative;font-size: 1.125em;background: #f5f5f5;}
 .le_tabs .nothing .item_box::after {content: '';display: block;width: 150px;height: 150px;position: absolute;top: 70px;left: 50%;transform: translateX(-50%);background: url(../img/nothing_le.png) no-repeat center;}
 
 
 /* 강좌정보 더보기&검색 */
-.lecture_tab_box .btn {width: 35px;height: 35px;border-radius: 50%;background: url(../img/main_ir.png) -131px -144px#004adf;position: absolute;top: -4px; left: 410px;}
+.lecture_tab_box .btn_more {position: absolute;top: -4px; left: 410px;}
+.lecture_tab_box .btn_more a {width: 35px;height: 35px;border-radius: 50%;background: url(../img/main_ir.png) -131px -144px#004adf;}
 
 .lecture_tab_box .search_a {display: flex;position: absolute;top: -4px;right: 16px;border-radius: 10px;min-width: 308px;}
 .lecture_tab_box .search_a input {height: 35px;border: none;background: #e9f3ff;border-radius: 10px;min-width: 280px;}
@@ -134,6 +135,8 @@
 
 .news_tab_wrap .tab_cont > .news_list > li > a {width: 100%;height: 100%; display: block;display: flex;}
 /* .news_list .latest {width: 100%;height: 80px;} */
+.news_list .latest {position: relative;}
+.news_list .latest .tag_new {width: 30px;height: 30px;line-height: 30px;font-weight: bold;font-size: 1.125em;color: #fff;border-radius: 50%;background-color: #f83737;position: absolute;top: 10px;left: -12px;font-style: italic;padding-left: 7px;}
 .news_list .latest .date_box {width: 13%;text-align: center;position: relative;}
 .news_list .latest .date_box::after {content: '';display: block;width:1px;height: 100%;background: #d4d4d4;position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
 .news_list .latest .date_box .day {font-size: 1.875em;font-weight: 500;}
@@ -177,18 +180,17 @@
 .al_sd_wrap .counter {position: absolute;color: #fff;bottom: 15px;right: 75px;z-index: 10;}
 
 
-
-
-
 /* 관련사이트 */
 .related_wrap {width: 100%;padding: 20px 0;background: #f6f6f6;margin-top: 90px;}
-.rel_box .rel_tit {width: 15%;padding-left: 30px;font-weight: 500;}
+.rel_box .rel_tit {width: 15%;padding-left: 30px;font-weight: 500;position: relative;}
+.rel_box .rel_tit::after {content:'';display: block;width: 24px;height: 24px;background: url(../img/main_ir.png) -460px -153px no-repeat;position: absolute;top: -3px;left: 0;}
 .rel_box .site_list {width:85%;justify-content: space-between;}
 .rel_box .site_list li {position: relative;}
 .rel_box .site_list li::after {content: '';display: block;width: 3px;height: 3px;border-radius: 50%;background: #515151;position: absolute;top: 50%;transform: translateY(-50%);right:-20px;}
 .rel_box .site_list li:last-child::after {display: none;}
 .rel_box .site_list li a {width:100%;height: 100%;display: block;}
 .rel_box .site_list li a:hover {color: #004adf;}
+
 
 /* @keyframes rotate-vert-center {  0% { transform: rotateY(0);opacity:.5;  }  100% {transform: rotateY(360deg);opacity:1;}} */
 
