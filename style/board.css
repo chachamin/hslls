@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* 리스트 페이지 공통*/
+.board_list,.board_view,.bo_write_wrap,.bogal_wrap{margin-bottom:100px}
+
+.board_search{position:relative;background:#fafafa;padding:30px;margin-bottom: 25px;}
+.board_search .total{display:inline-block;height:46px;line-height:46px;}
+.board_search .search_form .search_input_wrap,
+.board_search .search_form{display:inline-block;position:relative;}
+.board_search #searchQuery{width:300px}
+.board_search select,.board_search input{border:1px solid #ddd;}
+.board_search input{position:relative;padding-right:46px;}
+.board_search input.s_text_a {padding: 10px 14px; width: 300px;}
+.board_search .btn_search{background: #083797;height:46px;width:95px;line-height:46px;border:0;border-radius: 0 10px 10px 0;color: #fff;padding: 0 8px;}
+.board_search .br_ra_l {border-radius: 10px 0 0 10px;}
+
+.pagination{text-align:center;margin-top:10px}
+.pagination ul li{display:inline-block;vertical-align:middle;text-align:center;line-height:35px}
+.pagination ul li a{display:block;width:35px;height:35px;}
+.pagination ul li a.active{background:#083797;color:#fff;font-weight:500}
+.pagination ul li a.ico{border:1px solid #ddd;font-size:0;margin-left:-4px;background:url('/img/ir.png') no-repeat -740px -268px #fff}
+.pagination ul li a.prev{background-position:-783px -268px;margin-right:10px;}
+.pagination ul li a.next{background-position:-821px -268px;margin-left:10px}
+.pagination ul li a.first{border-radius: 10px 0 0 10px;}
+.pagination ul li a.last{background-position:-862px -268px;border-radius: 0 10px 10px 0;}
+
+.bo_list .basic_tb1 {border-top: 2px solid #083797;}
+.bo_list .basic_tb1 tr th {background: #f5f5f5;padding: 15px;text-align: center;border: 1px solid #ddd;}
+.bo_list .basic_tb1 tr td {text-align: center;border: 1px solid #ddd;padding: 15px;}
+
+/* 강좌검색/수강신청 리스트 */
+.le_list_table {width: 100%;border-top: 2px solid #083797; table-layout: fixed;}
+.le_list_table tr th {background: #f5f5f5;padding: 15px;text-align: center;border: 1px solid #ddd;}
+.le_list_table tr td {text-align: center;border: 1px solid #ddd;padding: 15px;}
+.le_list_table tr td:nth-child(2) {text-align:left;}
+
+.le_list_table tr td span[class*="tag_"] {padding: 5px 10px;font-size: 0.875em;border-radius: 20px;width: 90px;color: #fff;font-weight: 500;}
+.le_list_table tr td span.tag_00 {background: #52904a;}
+.le_list_table tr td span.tag_01 {background: #f67117;}
+.le_list_table tr td span.tag_02 {background: #c1c1c1;color: #515151;}
+.le_list_table tr td .apply {padding: 5px 10px;font-size: 0.875em;border-radius: 20px;width: 90px;color: #fff;font-weight: 500;margin-top: 5px;}
+.le_list_table tr td .a_t_1 {width: 100%;height: 100%;display: block;background: #f3a72c;}
+.le_list_table tr td .a_t_2 {background: #f3a72c;}
+
+.le_list_table tr td > a {width: 100%;height: 100%;display: block;transition: all 0.3s ease;}
+.le_list_table tr td > a:hover .tit {color: #255dfa;}
+.le_list_table tr td span.type {display: inline-block;padding: 3px 5px;font-size: 0.75rem;color: #255dfa;border-radius: 3px;border: 1px solid #255dfa;font-weight: 500;background: rgba(37, 93, 250, .1);}
+.le_list_table tr td span.tit {width: 100%;font-size: 1.125em;text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;line-height: 1.3em;height: 2.6em;margin: 5px 0;font-weight: 500;}
+.le_list_table tr td span.time {font-size: 0.875em;width: 100%;overflow:hidden;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.le_list_table tr td span.age_type{font-size: 0.875em;}
+.le_list_table tr td span.fb2{color: #562cb5;}
+
+.le_list_table tr td span.mo_vis {display: none;}
+
+.le_list_table tr.no_le td {padding: 30px 0;}
+
+/* 수강신청 확인 및 취소 */
+.le_list .basic_tb1 {table-layout: fixed;}
+.le_list .basic_tb1 tr td a.fb1 {width: 100%; display:block;text-align: left;transition: all 0.3s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.le_list .basic_tb1 tr td a.fb1:hover {color: #255dfa;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.le_list .basic_tb1 tr td span.ap_ok {color: #562cb5;font-weight: 500;}
+.le_list .basic_tb1 tr td span.ap_wa {color: #388f2c;font-weight: 500;}
+.le_list .basic_tb1 tr td span.ap_de {color: #969696;font-weight: 500;}
+
+.le_list .basic_tb1 tr td a.btn_de {padding: 5px 15px;border: 1px solid #ec4550;color: #db2632;border-radius: 20px;font-weight: 500;}

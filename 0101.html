@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style/layout.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/rspnsv.css">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/board.css">
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.js"></script>
@@ -350,7 +352,7 @@
                                                             <td>
                                                                 <a href="#">
                                                                     <span class="type">인문교양교육</span>
-                                                                    <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                                    <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
                                                                     <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
                                                                     <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                                 </a>
@@ -368,7 +370,7 @@
                                                             <td>
                                                                 <a href="#">
                                                                     <span class="type">인문교양교육</span>
-                                                                    <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                                    <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
                                                                     <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
                                                                     <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                                 </a>
@@ -386,7 +388,7 @@
                                                             <td>
                                                                 <a href="#">
                                                                     <span class="type">인문교양교육</span>
-                                                                    <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                                    <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
                                                                     <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
                                                                     <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                                 </a>
@@ -403,7 +405,7 @@
                                                             <td>
                                                                 <a href="#">
                                                                     <span class="type">인문교양교육</span>
-                                                                    <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                                    <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
                                                                     <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
                                                                     <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                                 </a>
@@ -551,8 +553,8 @@
                                         전체 <span class="fb3">4개</span>의 강좌가 있습니다.
                                     </div>
                                     <div class="search_form fr">
-                                        <select name="keyField" id="select" title="모집현황 선택" class="">
-                                            <option value="" selected="selected">전체</option>
+                                        <select name="keyField" id="select" title="모집현황 선택" class="br_ra_l">
+                                            <option value="" selected="selected">모집상태</option>
                                             <option value="on">모집중</option>
                                             <option value="wait">모집예정</option>
                                             <option value="end">모집마감</option>
@@ -562,92 +564,99 @@
                                             <option value="title">강좌명</option>
                                             <option value="content">내용</option>
                                         </select>
-                                        <input type="text" placeholder="찾으시는 강좌명을 입력하세요.">
+                                        <input type="text" placeholder="찾으시는 강좌명을 입력하세요." class="s_text_a">
                                         <button type="submit" class="btn_search">검색</button>
                                     </div>
                                 </div>
                                 <div class="bogal_table_wrap">
                                     <table class="le_list_table">
                                         <caption>평생학습 강좌 정보를 번호, 강좌명/신청기간/교육기간, 교육기관, 교육대상, 신청/정원, 수강료/재료비, 모집현황 순으로 안내하는 표입니다.</caption>
-
+                                        <colgroup>
+                                            <col width="12%">
+                                            <col width="31%">
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="12%">
+                                            <col width="15%">
+                                        </colgroup>
                                         <thead>
                                             <tr>
-                                                <td>모집현황</td>
-                                                <td>강좌명/신청기간/교육기간</td>
-                                                <td>교육기관</td>
-                                                <td>교육대상</td>
-                                                <td>신청/정원</td>
-                                                <td>수강료/재료비</td>
+                                                <th>모집현황</th>
+                                                <th>강좌명/신청기간/교육기간</th>
+                                                <th>교육기관</th>
+                                                <th>교육대상</th>
+                                                <th>신청/정원</th>
+                                                <th>수강료/재료비</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><span class="wait">모집예정</span></td>
+                                                <td><span class="tag_00">모집예정</span></td>
                                                 <td>
                                                     <a href="#">
                                                         <span class="type">인문교양교육</span>
-                                                        <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
-                                                        <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
-                                                        <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
+                                                        <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                        <span class="time add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
+                                                        <span class="time add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                     </a>
                                                 </td>
-                                                <td>화순 열린도서관</td>
-                                                <td>성인<span class="age_type">(40대 이상 주민)</span></td>
-                                                <td><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
-                                                <td>무료 / 강의정보 확인</td>
+                                                <td><span class="mo_vis">교육기관</span>화순 열린도서관</td>
+                                                <td><span class="mo_vis">교육대상</span>성인<br><span class="age_type">(40대 이상 주민)</span></td>
+                                                <td><span class="mo_vis">신청/정원</span><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
+                                                <td><span class="mo_vis">수강료/재료비</span>무료 / 강의정보 확인</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <span class="on">모집중</span>
+                                                    <span class="tag_01">모집중</span>
                                                     <a href="#" class="apply a_t_1">수강신청</a>
                                                 </td>
                                                 <td>
                                                     <a href="#">
                                                         <span class="type">인문교양교육</span>
-                                                        <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
-                                                        <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
-                                                        <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
+                                                        <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                        <span class="time add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
+                                                        <span class="time add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                     </a>
                                                 </td>
-                                                <td>청춘들락</td>
-                                                <td>가족</td>
-                                                <td><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
-                                                <td>10,000원 / 무료</td>
+                                                <td><span class="mo_vis">교육기관</span>화순 열린도서관</td>
+                                                <td><span class="mo_vis">교육대상</span>청소년수련관 수련생</td>
+                                                <td><span class="mo_vis">신청/정원</span><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
+                                                <td><span class="mo_vis">수강료/재료비</span>상세내용 확인 / 상세내용 확인</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <span class="on">모집중</span>
+                                                    <span class="tag_01">모집중</span>
                                                     <span class="apply a_t_2">서면접수</span>
                                                 </td>
                                                 <td>
                                                     <a href="#">
                                                         <span class="type">인문교양교육</span>
-                                                        <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
-                                                        <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
-                                                        <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
+                                                        <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                        <span class="time add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
+                                                        <span class="time add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                     </a>
                                                 </td>
-                                                <td>청춘들락</td>
-                                                <td>가족</td>
-                                                <td><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
-                                                <td>10,000원 / 무료</td>
+                                                <td><span class="mo_vis">교육기관</span>화순 열린도서관</td>
+                                                <td><span class="mo_vis">교육대상</span>가족</td>
+                                                <td><span class="mo_vis">신청/정원</span><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
+                                                <td><span class="mo_vis">수강료/재료비</span>10,000 / 무료</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <span class="on">모집마감</span>
+                                                    <span class="tag_02">모집마감</span>
                                                 </td>
                                                 <td>
                                                     <a href="#">
                                                         <span class="type">인문교양교육</span>
-                                                        <span class="tit">시대의 문희를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
-                                                        <span class="time1 add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
-                                                        <span class="time2 add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
+                                                        <span class="tit">시대의 문화를 마시고 향유하다(1차) 군산의 맛, 교토의 맛</span>
+                                                        <span class="time add_dot">신청기간 : 2023.05.16 ~ 2023.05.30</span>
+                                                        <span class="time add_dot">교육기간 : 2023.06.02 ~ 2023.06.30</span>
                                                     </a>
                                                 </td>
-                                                <td>화순군청</td>
-                                                <td>장애인</td>
-                                                <td><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
-                                                <td>무료 / 무료</td>
+                                                <td><span class="mo_vis">교육기관</span>화순 열린도서관</td>
+                                                <td><span class="mo_vis">교육대상</span>장애인</td>
+                                                <td><span class="mo_vis">신청/정원</span><span class="fb2">0명</span> / <span class="total_c">15명</span></td>
+                                                <td><span class="mo_vis">수강료/재료비</span>무료 / 무료</td>
                                             </tr>
                                             <tr class="no_le">
                                                 <td colspan="6">강좌 정보가 없습니다.</td>
@@ -686,13 +695,21 @@
                             <div class="bo_list le_list">
                                 <div class="board_search clearfix">
                                     <div class="total fl">
-                                        전체 <span class="fb3">4개</span>의 신청내역이 있습니다.
+                                        전체 <span class="fb3">5개</span>의 신청내역이 있습니다.
                                     </div>
                                 </div>
                             
                                 <div class="mt16">
-                                    <table class="basic_tb1 t_a_c">
+                                    <table class="basic_tb1">
                                         <caption>수강신청 내역을 순번, 강의명, 신청일자, 신청상태, 비고 순으로 안내하는 표입니다.</caption>
+                                        <colgroup>
+                                            <col width="8%">
+                                            <col width="31%">
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="15%">
+                                        </colgroup>
+
                                         <thead>
                                             <tr>
                                                 <th>순번</th>
@@ -704,39 +721,39 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th></th>
-                                                <th><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></th>
-                                                <th>2023.04.10</th>
-                                                <th><span class="ap_ok">접수완료</span></th>
-                                                <th><a href="#" class="btn_de">취소신청</a></th>
+                                                <td>5</td>
+                                                <td><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></td>
+                                                <td>2023.04.10</td>
+                                                <td><span class="ap_ok">접수완료</span></td>
+                                                <td><a href="#" class="btn_de">취소신청</a></td>
                                             </tr>
                                             <tr>
-                                                <th></th>
-                                                <th><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></th>
-                                                <th>2023.04.08</th>
-                                                <th><span class="ap_ok">접수완료</span></th>
-                                                <th><span class="ing_c">강의중</span></th>
+                                                <td>4</td>
+                                                <td><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초 혼자서 읽는 영어 원서 - 기초 혼자서 읽는 영어 원서 - 기초</a></td>
+                                                <td>2023.04.08</td>
+                                                <td><span class="ap_ok">접수완료</span></td>
+                                                <td><span class="ing_c">강의중</span></td>
                                             </tr>
                                             <tr>
-                                                <th></th>
-                                                <th><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></th>
-                                                <th>2023.04.08</th>
-                                                <th><span class="ap_ok">접수완료</span></th>
-                                                <th><span class="end_c">강의종료</span></th>
+                                                <td>3</td>
+                                                <td><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></td>
+                                                <td>2023.04.08</td>
+                                                <td><span class="ap_ok">접수완료</span></td>
+                                                <td><span class="end_c">강의종료</span></td>
                                             </tr>
                                             <tr>
-                                                <th></th>
-                                                <th><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></th>
-                                                <th>2023.04.08</th>
-                                                <th><span class="ap_wa">접수대기</span></th>
-                                                <th><a href="#" class="btn_de">취소신청</a></th>
+                                                <td>2</td>
+                                                <td><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></td>
+                                                <td>2023.04.08</td>
+                                                <td><span class="ap_wa">접수대기</span></td>
+                                                <td><a href="#" class="btn_de">취소신청</a></td>
                                             </tr>
                                             <tr>
-                                                <th></th>
-                                                <th><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></th>
-                                                <th>2023.04.08</th>
-                                                <th><span class="ap_de">접수취소</span></th>
-                                                <th></th>
+                                                <td>1</td>
+                                                <td><a href="#" class="fb1">혼자서 읽는 영어 원서 - 기초</a></td>
+                                                <td>2023.04.08</td>
+                                                <td><span class="ap_de">접수취소</span></td>
+                                                <td></td>
                                             </tr>
                                         </tbody>
                                     </table>
