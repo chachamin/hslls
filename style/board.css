@@ -3,12 +3,12 @@
 /* 리스트 페이지 공통*/
 .board_list,.board_view,.bo_write_wrap,.bogal_wrap{margin-bottom:100px}
 
-.board_search{position:relative;background:#fafafa;padding:30px;margin-bottom: 25px;}
+.board_search{position:relative;padding:30px;margin-bottom: 30px;border: 1px solid #ddd;}
 .board_search .total{display:inline-block;height:46px;line-height:46px;}
 .board_search .search_form .search_input_wrap,
 .board_search .search_form{display:inline-block;position:relative;}
 .board_search #searchQuery{width:300px}
-.board_search select,.board_search input{border:1px solid #ddd;}
+.board_search select,.board_search input{background-color: #efeeec;border: 1px solid #f0f0f0;border-radius:0;}
 .board_search input{position:relative;padding-right:46px;}
 .board_search input.s_text_a {padding: 10px 14px; width: 300px;}
 .board_search .btn_search{background: #083797;height:46px;width:95px;line-height:46px;border:0;border-radius: 0 10px 10px 0;color: #fff;padding: 0 8px;}
@@ -54,6 +54,9 @@
 
 .le_list_table tr.no_le td {padding: 30px 0;}
 
+/* 강좌정보 */
+.le_v_wrap .info_tit {}
+
 /* 수강신청 확인 및 취소 */
 .le_list .basic_tb1 {table-layout: fixed;}
 .le_list .basic_tb1 tr td a.fb1 {width: 100%; display:block;text-align: left;transition: all 0.3s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -63,3 +66,4 @@
 .le_list .basic_tb1 tr td span.ap_de {color: #969696;font-weight: 500;}
 
 .le_list .basic_tb1 tr td a.btn_de {padding: 5px 15px;border: 1px solid #ec4550;color: #db2632;border-radius: 20px;font-weight: 500;}
+

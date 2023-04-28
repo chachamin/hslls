@@ -1,4 +1,15 @@
 @charset "utf-8";
 
+
+/* 공통 */
 .add_dot {padding-left: 10px;position: relative;}
 .add_dot::after {content: '';display: block;width: 5px;height: 5px;background: #bdbdbd;border-radius: 50%;position: absolute;top: 50%;transform: translateY(-50%);left: 0;}
+
+.tab_box {width: 100%;margin-bottom: 40px;}
+.tab_box .tab {display: flex;justify-content: space-between;}
+.tab_box .tab li {text-align: center;}
+.tab_box .tab li a {width:100%;padding:16px 0;border-radius: 5px;font-weight: 500;color: #6c6c6c;background: #f4f4f4;border: 1px solid #f4f4f4;}
+.tab_box .tab li a.active {border: 1px solid #1a1a1a;background:#fff;color: #1a1a1a;}
+.tab_box .tab li a:hover {border: 1px solid #1a1a1a;background:#fff;color: #1a1a1a;}
+.tab_box .tab.col2 li {width:calc((100% - 8px) /2);}
+
