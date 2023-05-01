@@ -55,7 +55,8 @@
 .le_list_table tr.no_le td {padding: 30px 0;}
 
 /* 강좌정보 */
-.le_v_wrap .info_tit {}
+.le_v_wrap .info_tit {font-size: 1.250em;font-weight: 600;margin-bottom: 15px;}
+
 
 /* 수강신청 확인 및 취소 */
 .le_list .basic_tb1 {table-layout: fixed;}
