@@ -57,8 +57,48 @@
 /* 강좌정보 */
 .le_v_wrap .info_tit {font-size: 1.250em;font-weight: 600;margin-bottom: 15px;}
 
+.le_v_wrap .le_v_title {padding: 20px;border-top: 2px solid #21262e;border-bottom: 2px solid #21262e;background: #f8f8f8;}
+.le_v_wrap .le_v_title p {font-weight: 600;font-size: 1.250em;}
+.le_v_wrap .le_v_title  .state {margin-left: 8px;padding: 4px;font-size: .75rem;border: 1px solid #ddd;background: #fff;}
 
-/* 수강신청 확인 및 취소 */
+.le_info_box {display: flex;border-bottom: 1px solid #ddd;}
+.le_info_box .info_l {width: 30%;padding: 20px;}
+.le_info_box .info_l .no_img {height: 100%;display: flex;align-items: center;justify-content: center;background: #fafafa;}
+.le_info_box .info_r {width: 70%;padding: 20px;}
+.le_info_box .le_v_table {border-top: 1px solid #ddd;}
+.le_info_box .le_v_table th {padding: 0.75rem;width: 20%;background: #fafafa;border-bottom: 1px solid #ddd;color:#121212;font-weight: 500;}
+.le_info_box .le_v_table td {padding: 0.75rem;border-bottom: 1px solid #ddd;}
+.le_info_box .le_v_table td .fb1 {color: #562cb5;}
+
+.le_info_box .btn_box {display: flex;margin-top: 20px;}
+.le_info_box .btn_box a {width: 48%;margin: 0 1%;padding: 10px;text-align: center;display: block;border-radius: 10px;border: 1px solid #3d8e36;}
+.le_info_box .btn_box a.apply {color: #fff;background: #f3a72c;border: 1px solid #f3a72c;}
+.le_info_box .btn_box a.wait {background: #c1c1c1;color: #515151;border: 1px solid #c1c1c1;}
+
+.le_info_box.mbox {margin-top: 20px;display: block;padding-bottom: 20px;border-bottom: none;}
+.le_v_table td .instructor {padding: 10px 15px 10px 40px;font-size: 0.875em;border: 1px solid #ddd;border-radius: 5px;}
+.le_v_table td .ico_excl {display: block;margin-top: 10px;font-size: 0.875em;padding-left: 20px;position: relative;}
+.le_v_table td .ico_excl::after {content: '!';display: block;width: 18px;height: 18px;background: #c5c5c5;font-weight: 700;color: #fff;text-align: center;line-height: 18px;border-radius: 50%;position: absolute;top: -1px;left: 0;}
+.le_info_box .le_v_table .down_box {flex-wrap: wrap;}
+.le_info_box .le_v_table .down_box .down {padding: 10px 15px 10px 40px;font-size: 0.875em;border: 1px solid #ddd;border-radius: 5px;margin-right: 10px;}
+.le_info_box .le_v_table .down_box a:last-child {margin-right: 0;}
+
+.le_info_box.bbox {display: block;margin-top: 20px;border-bottom: none;}
+.le_info_box.bbox .le_v_table {font-size: 0.875em;text-align: center;}
+.le_info_box.bbox .le_v_table .ap_ok {color: #562cb5;}
+.le_info_box.bbox .le_v_table .ap_wa {color: #388f2c;}
+.le_info_box .n_red {font-size: 0.725em;margin-left: 10px;color: red;}
+
+.view_pagination ul {background: #f3f4f7;border-top: 1px solid #a7a7a7;border-bottom: 1px solid #a7a7a7;}
+.view_pagination ul li {width: 50%;}
+.view_pagination ul li a{display: block;padding: 26px 30px;font-weight: 500;font-size: 0.875em;position: relative;}
+.view_pagination ul li.prev a {padding-left: 90px;text-align: right;}
+.view_pagination ul li.next a {padding-right: 90px;text-align: left;}
+.view_pagination ul li a span {position: absolute;font-size: 0.813em;width: 62px;height: 26px;margin-top: -13px;top: 50%;background: #7e8baf;color: #fff;border-radius: 20px;text-align: center;line-height: 26px;}
+.view_pagination ul li.prev a span {left: 20px;}
+.view_pagination ul li.next a span {right: 20px;}
+
+/* 수강신청 확인 및 취소 - 리스트*/
 .le_list .basic_tb1 {table-layout: fixed;}
 .le_list .basic_tb1 tr td a.fb1 {width: 100%; display:block;text-align: left;transition: all 0.3s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .le_list .basic_tb1 tr td a.fb1:hover {color: #255dfa;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -68,3 +108,18 @@
 
 .le_list .basic_tb1 tr td a.btn_de {padding: 5px 15px;border: 1px solid #ec4550;color: #db2632;border-radius: 20px;font-weight: 500;}
 
+/* 수강신청 확인 및 취소 - 수강신청*/
+.personal_info {border: 1px solid #ddd;border-radius: 15px;padding: 20px;}
+.personal_info ul li p.fb1 {padding-left: 20px;}
+.personal_info ul li p:not(.fb1){padding-left: 30px;position: relative;}
+.personal_info ul li p:not(.fb1)::after {content: '';display: block;width: 5px;height: 5px;border-radius: 50%;background: #ddd;position: absolute;top: 7px;left: 20px;}
+
+/* 버튼 */
+.bo_btn_wrap {width: 100%;margin-top: 20px;display: flex;justify-content: end;}
+.bo_btn_wrap a {padding:7px 15px;border: 1px solid #a7a7a7;border-radius: 7px;margin-right: 10px;font-weight: 500;}
+.bo_btn_wrap a:last-child {margin-right: 0;}
+.bo_btn_wrap a.cancel {color: red;border: 1px solid red;}
+.bo_btn_wrap a.de_con {color: #562cb5;border: 1px solid #562cb5;}
+.bo_btn_wrap a.ans_t {color: #255dfa;border: 1px solid #255dfa;}
+.bo_btn_wrap a.save {color: #388f2c;border: 1px solid #388f2c;}
+.bo_btn_wrap a.write {color: #388f2c;border: 1px solid #388f2c;}
