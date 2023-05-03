@@ -99,6 +99,8 @@
 .view_pagination ul li.next a span {right: 20px;}
 
 /* 수강신청 확인 및 취소 - 리스트*/
+
+.le_list .info_tit {font-size: 1.250em;font-weight: 600;margin-bottom: 15px;}
 .le_list .basic_tb1 {table-layout: fixed;}
 .le_list .basic_tb1 tr td a.fb1 {width: 100%; display:block;text-align: left;transition: all 0.3s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .le_list .basic_tb1 tr td a.fb1:hover {color: #255dfa;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
