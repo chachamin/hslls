@@ -24,9 +24,18 @@
 .pagination ul li a.first{border-radius: 10px 0 0 10px;}
 .pagination ul li a.last{background-position:-862px -268px;border-radius: 0 10px 10px 0;}
 
-.bo_list .basic_tb1 {border-top: 2px solid #083797;}
-.bo_list .basic_tb1 tr th {background: #f5f5f5;padding: 15px;text-align: center;border: 1px solid #ddd;}
-.bo_list .basic_tb1 tr td {text-align: center;border: 1px solid #ddd;padding: 15px;}
+.basic_tb1 {border-top: 2px solid #083797;}
+.basic_tb1 tr th {background: #f5f5f5;padding: 15px;text-align: center;border: 1px solid #ddd;}
+.basic_tb1 tr td {text-align: center;border: 1px solid #ddd;padding: 15px;}
+
+.basic_tb2 {font-size: 0.938em;}
+.basic_tb2 tr th {background: #f5f5f5;padding: 15px;text-align: center;border: 1px solid #ddd;font-weight: 500;}
+.basic_tb2 tr th:first-child {border-left: none;}
+.basic_tb2 tr td {border: 1px solid #ddd;padding: 12px;}
+.basic_tb2 tr td:last-child {border-right:none;}
+.basic_tb2 tr td:not(.address) input {width: 100%;}
+
+.info_tit {font-size: 1.250em;font-weight: 600;margin-bottom: 15px;}
 
 /* 강좌검색/수강신청 리스트 */
 .le_list_table {width: 100%;border-top: 2px solid #083797; table-layout: fixed;}
@@ -111,10 +120,18 @@
 .le_list .basic_tb1 tr td a.btn_de {padding: 5px 15px;border: 1px solid #ec4550;color: #db2632;border-radius: 20px;font-weight: 500;}
 
 /* 수강신청 확인 및 취소 - 수강신청*/
-.personal_info {border: 1px solid #ddd;border-radius: 15px;padding: 20px;}
+.personal_info {border: 1px solid #ddd;border-radius: 15px;padding: 20px 30px;}
+.personal_info ul li {margin: 10px 0;}
 .personal_info ul li p.fb1 {padding-left: 20px;}
-.personal_info ul li p:not(.fb1){padding-left: 30px;position: relative;}
+.personal_info ul li p:not(.fb1){padding-left: 30px;position: relative;font-size: 0.938em;}
 .personal_info ul li p:not(.fb1)::after {content: '';display: block;width: 5px;height: 5px;border-radius: 50%;background: #ddd;position: absolute;top: 7px;left: 20px;}
+.personal_info .agree_wrap {border-top: 1px dashed #ddd;margin-top: 20px;display: flex;justify-content: start;padding-top: 20px;}
+.personal_info .agree_wrap .fb1 {margin-right: 20px;}
+
+.apply_le_info {margin-top: 30px;}
+.apply_le_info .le_info {margin-bottom: 30px;}
+.apply_le_info .round_box7 {margin-top: 20px;font-size: 0.938em;padding: 15px 10px;}
+.apply_le_info .round_box7 .red {font-weight: 600;}
 
 /* 버튼 */
 .bo_btn_wrap {width: 100%;margin-top: 20px;display: flex;justify-content: end;}

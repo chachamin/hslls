@@ -137,6 +137,28 @@
 #contentWrap .sub_title_box .screen_unit a.btn-zoomdown{background-position:-510px -29px;}
 #contentWrap .sub_title_box .screen_unit a.print{background-position:-559px -29px;}
 
+/* 로그인 로그아웃 */
+.log_wrap {width: 100%;border: 6px solid #f4f4f4;border-radius: 15px 15px 35px 15px;padding: 50px 30px 20px 30px;}
+.log_wrap .text_box {text-align: center;}
+.log_wrap .text_box .tit {font-size: 1.563em;text-align: center;margin-bottom: 10px;}
+.log_wrap .text_box .fb2 {color: #004adf;}
+.log_wrap .log_btn {text-align: center;margin: 50px 0;}
+.log_wrap .log_btn a {padding: 15px 50px 15px 70px;color: #fff;background-color: #004adf;border-radius: 10px;}
+.log_wrap .log_btn.logout a {padding: 15px 50px 15px 50px;}
+
+.log_wrap .login_noti {border-top: 1px dashed #ddd;padding-top: 20px;font-size: 0.875em;}
+.log_wrap .login_noti .ico_excl {font-weight: 500;padding-left: 25px;position: relative;}
+.log_wrap .login_noti .ico_excl::after {content: '!';display: block;width: 15px;height: 15px;border: 2px solid #7b7b7b;font-weight: 700;text-align: center;line-height: 15px;border-radius: 50%;position: absolute;left: 0;top: -2px;font-size: 0.875em;}
+.log_wrap .login_noti .add_dot {margin-top: 7px;margin-left: 7px;}
+
+.log_wrap.master .id_wrap {width: 40%;margin: 0 auto;}
+.log_wrap.master .id_wrap input {width: 100%;padding-left: 20px;}
+.log_wrap.master .id_wrap input.master_id {border-radius: 10px 10px 0 0;}
+.log_wrap.master .id_wrap input.master_pw {border-radius: 0 0 10px 10px;border-top: transparent;}
+.log_wrap.master .login_btn {width: 40%;padding: 15px;margin-top: 20px;}
+
+
+
 @keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0);
