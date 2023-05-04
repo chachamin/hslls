@@ -12,4 +12,7 @@
 .tab_box .tab li a.active {border: 1px solid #1a1a1a;background:#fff;color: #1a1a1a;}
 .tab_box .tab li a:hover {border: 1px solid #1a1a1a;background:#fff;color: #1a1a1a;}
 .tab_box .tab.col2 li {width:calc((100% - 8px) /2);}
+.tab_box .tab.col3 li {width:calc((100% - 8px) /3);}
+.tab_box .tab.col4 li {width:calc((100% - 8px) /4);}
+.tab_box .tab.col5 li {width:calc((100% - 8px) /5);}
 

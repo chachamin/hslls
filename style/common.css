@@ -61,8 +61,8 @@ input:read-only{background:#fafafa;color:#111;}
 .chkbox label{position:relative;display:inline-block;min-height:24px;line-height:1.4;margin:0;padding-left:28px;color:#666;cursor:pointer;}
 .chkbox input {position:absolute; width:20px; height:20px; padding:0; opacity:0; border:none; margin:0; z-index:10; background:none; appearance:none; -webkit-appearance:none;}
 .chkbox input[type="checkbox"] + label:before{content:'';position:absolute;top:0px;left:0;display:inline-block; width:20px; height:20px; border:1px solid #ddd;background:url('../img/check_box.png') center center no-repeat #fafafa ;cursor:pointer;border-radius:4px;}
-.chkbox input[type="checkbox"]:checked + label:before {background:url('../img/check_box_w.png') center center no-repeat #00a0c9 ;border-color:transparent}
-.chkbox input[type="checkbox"]:checked + label{color:#00a0c9 }
+.chkbox input[type="checkbox"]:checked + label:before {background:url('../img/check_box_w.png') center center no-repeat #004adf ;border-color:transparent}
+.chkbox input[type="checkbox"]:checked + label{color:#004adf }
 .chkbox input[type="checkbox"]:focus + label{border:1px dotted #666}
 
 /* 마우스 드래그 컬러 */

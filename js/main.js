@@ -108,6 +108,27 @@ $(document).ready(function(){
 		$(this).parent('li').siblings('li').find('a.more').css('display','none');
 	});
 
+	
+
+	// -------------------------- 강좌정보등록  선택 활성화 --------------------------
+	$(".way_chk").click(function () {
+		if ($(this).is(":checked")) {
+			$(this).parent().siblings().children(".way_text").removeAttr("disabled");
+			$(this).parent().siblings().children(".way_text").focus();
+		} else {
+			$(this).parent().siblings().children(".way_text").attr("disabled", "disabled");
+		}
+	});
+
+	$(".tea_chk").click(function () {
+		if ($(this).is(":checked")) {
+			$(this).parent().siblings().children(".tea_text").removeAttr("disabled");
+			$(this).parent().siblings().children(".tea_text").focus();
+		} else {
+			$(this).parent().siblings().children(".tea_text").attr("disabled", "disabled");
+		}
+	});
+
 
 
 });
