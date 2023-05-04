@@ -164,3 +164,6 @@
 .bo_btn_wrap a.ans_t {color: #255dfa;border: 1px solid #255dfa;}
 .bo_btn_wrap a.save {color: #388f2c;border: 1px solid #388f2c;}
 .bo_btn_wrap a.write {color: #388f2c;border: 1px solid #388f2c;}
+
+/* 강사현황 */
+.basic_tb1 .active {padding:5px 10px;border-radius: 15px;background: #388f2c; color: #fff;}
