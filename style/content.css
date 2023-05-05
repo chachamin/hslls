@@ -16,3 +16,9 @@
 .tab_box .tab.col4 li {width:calc((100% - 8px) /4);}
 .tab_box .tab.col5 li {width:calc((100% - 8px) /5);}
 
+.tab_box2 {width: 100%;padding: 20px;border: 1px solid #ddd;margin-bottom: 10px;}
+.tab_box2 .tab li {width: 90px;text-align: center;position: relative;}
+.tab_box2 .tab li::after {content:'';display: block; width: 1px;height: 12px;background: #e5e5e5;position: absolute;right: 0;top: 3px;}
+.tab_box2 .tab li:last-child::after {display: none;}
+.tab_box2 .tab li a:hover {color: #004adf;font-weight: 500;text-decoration: underline;text-underline-position: under;}
+.tab_box2 .tab li.active a {color: #004adf;font-weight: 500;text-decoration: underline;text-underline-position: under;}
