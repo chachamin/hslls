@@ -205,4 +205,29 @@ $(function () {
 	});
 });
 
+$(function(){
+	//강사은행 강좌리스트
+		function close_accordion_section() {
+			$('.le_more_btn').removeClass('active');
+			$('.t_le_list').stop().slideUp(500);
+		}
+	
+		$('.le_more_btn').click(function(e) {
+			// Grab current anchor value
+	
+			if($(this).is('.active')) {
+				close_accordion_section();
+			}else {
+				close_accordion_section();
+	
+				// Add active class to section title
+				$(this).addClass('active');
+				// Open up the hidden content panel
+				$(this).next('.t_le_list').stop().slideDown(500).addClass('open'); 
+			}
+	
+			e.preventDefault();
+		});
+	});
+
 

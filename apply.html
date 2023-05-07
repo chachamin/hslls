@@ -306,11 +306,11 @@
                             </ul>
                         </div>
                         
-                        <div class="app_wrap">
+                        <div class="app_wrap bo_form_wrap">
                             <div class="service_check">
                                 <div class="info_tit">개인정보 수집·이용·제공 동의</div>
                                 <div class="personal_info">
-                                    <p>화순군에서는 「개인정보보호법」에 의거, 수강신청자의 개인(신상)정보를 알래와 같이 수집 활용하고자 합니다. 충분히 읽어보신 후, 동의 여부를 체크하여 주시기 바랍니다.</p>
+                                    <p>화순군에서는 「개인정보보호법」에 의거, 수강신청자의 개인(신상)정보를 아래와 같이 수집 활용하고자 합니다. 충분히 읽어보신 후, 동의 여부를 체크하여 주시기 바랍니다.</p>
                                     <ul>
                                         <li>
                                             <p class="fb1">개인정보 수집·이용 목적</p>
@@ -370,6 +370,7 @@
                                 </div>
                                 <div class="info_tit">신청자 정보입력</div>
                                 <div class="apply_info bo_form">
+                                    <p class="must_noti">(*)필수입력항목입니다.</p>
                                     <table class="basic_tb2">
                                         <caption>이름, 성별, 휴대전화, 이메일, 주소 등 수강신청자의 정보를 입력하는 표입니다.</caption>
                                         <colgroup>
@@ -379,22 +380,22 @@
                                             <col width="35%">
                                         </colgroup>
                                         <tr>
-                                            <th>이름</th>
+                                            <th><span class="must"></span>이름</th>
                                             <td>나화순</td>
-                                            <th>성별</th>
+                                            <th><span class="must"></span>성별</th>
                                             <td>
                                                 <span class="radio"><input type="radio" name="gender" value="man" id="male"><label for="male">남성</label></span>
                                                 <span class="radio"><input type="radio" name="gender" value="woman" id="female"><label for="female">여성</label></span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>휴대전화</th>
+                                            <th><span class="must"></span>휴대전화</th>
                                             <td><input type="text" placeholder="예) 010-1234-5378"></td>
-                                            <th>이메일</th>
+                                            <th><span class="must"></span>이메일</th>
                                             <td><input type="text" placeholder="예) abcd@hanmail.net"></td>
                                         </tr>
                                         <tr>
-                                            <th>주소</th>
+                                            <th><span class="must"></span>주소</th>
                                             <td colspan="3" class="address">
                                                 <div>
                                                     <input type="text" id="userZip" name="zipcode" onclick="addrIns()" readonly  placeholder="우편번호 자동입력" title="우편번호 자동입력" >&nbsp;&nbsp;
