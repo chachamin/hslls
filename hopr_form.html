@@ -299,108 +299,102 @@
                             </ul>
                         </div>
 
-                        <div class="top_info_box hope">
-                            <div class="box_tit">희망강좌신청 게시판 이용 안내</div>
-                            <div class="exp_text">
-                                <ul>
-                                    <li>- 평생학습으로 개설 되었으면 하는 강좌를 신청해주세요.</li>
-                                    <li>- 개설강좌명과 과정에 대한 간략한 내용과 희망 운영시간 및 장소를 기재해 주세요.</li>
-                                    <li>- 해당 개시판의 성격과 무관한 광고 또는 비방하는 내용이나 욕설이 담긴 불건전한 내용은 본인동의 없이 삭제됩니다.</li>
-                                </ul>
+                        <div class="board_form">
+                            <div class="service_check">
+                                <div class="info_tit">개인정보 수집·이용·제공 동의</div>
+                                <div class="personal_info">
+                                    <p>화순군에서는 「개인정보보호법」에 의거, 강좌신청과 관련하여 귀하의(신상)정보를 아래와 같이 수집 활용하고자 합니다. 충분히 읽어보신 후, 동의 여부를 체크하여 주시기 바랍니다.</p>
+                                    <ul>
+                                        <li>
+                                            <p class="fb1">개인정보 수집·이용 목적</p>
+                                            <p>신청서 접수 및 신청자 식별을 목적으로 신청자의 개인정보를 수집합니다.</p>
+                                            <p>위 목적 이외에는 수집된 개인정보를 무단으로 사용하거나 제3자에게 제공하지 않습니다.</p>
+                                        </li>
+                                        <li>
+                                            <p class="fb1">수집하는 개인정보의 항목</p>
+                                            <p>성명, 연락처, 이메일</p>
+                                        </li>
+                                        <li>
+                                            <p class="fb1">개인정보의 보유 및 이용 기간</p>
+                                            <p>개인정보 보유기간은 관련 법규에 병시된 바에 따르며, 개인정보 제공자가 철회 요청시 파기합니다.</p>
+                                        </li>
+                                        <li>
+                                            <p class="fb1">동의 거부 권리 및 거부 시 불이익</p>
+                                            <p>위 개인정보의 수집·이용·제공과 관련하여 개인정보 동의를 거부할 수 있습니다. 다만, 상기 개인정보는 사업 추진과정에 반드시 필요한 정보이므로 수집·활용을 거부하실 경우 신청이 불가능함을 알려드립니다.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="agree_wrap">
+                                        <p class="fb1">개인정보 수집 및 활용</p>
+                                        <div class="dp_flex">
+                                            <span class="radio"><input type="radio" name="agree" value="ok" id="agreeY"><label for="agreeY">동의</label></span>
+                                            <span class="radio"><input type="radio" name="agree" value="no" id="agreeN"><label for="agreeN">비동의</label></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="board_wrap">
-                            <div class="board_search clearfix">
-                                <div class="total fl">
-                                    전체 <span class="fb3">3개</span>의 희망강좌가 있습니다.
-                                </div>
-                                <div class="search_form fr">
-                                    <select name="keyField" title="검색구분 선택">
-                                        <option value="" selected="selected">전체</option>
-                                        <option value="title">제목</option>
-                                        <option value="text">내용</option>
-                                    </select>
-                                    <input type="text" placeholder="검색어를 입력하세요." class="s_text_a">
-                                    <button type="submit" class="btn_search">검색</button>
-                                </div>
-                            </div>
-                            <div class="board_table_wrap">
-                                <table class="basic_tb1">
-                                    <caption>희망강좌 신청 리스트를 번호 제목 신청자 신청일 첨부 순으로 안내하는 표입니다.</caption>
+                            <div class="bo_form_wrap mt30">
+                                <div class="info_tit">희망강좌 신청</div>
+                                <p class="must_noti">(*)필수입력항목입니다.</p>
+                                <table class="basic_tb3">
+                                    <caption>제목, 신청자, 과정명, 연락처, 이메일, 희망시기, 내용, 첨부파일 순으로 내용일 입력하는 폼입니다.</caption>
                                     <colgroup>
-                                        <col width="10%">
-                                        <col width="45%">
                                         <col width="15%">
-                                        <col width="15%">
-                                        <col width="10%">
-                                        <col width="5%">
+                                        <col width="85%">
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>제목</th>
-                                            <th>신청자</th>
-                                            <th>신청일</th>
-                                            <th>첨부</th>
-                                            <th>조회수</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3</td>
-                                            <td><a href="#">미술교육 프로그램신청합니다.</a></td>
-                                            <td>김OO</td>
-                                            <td>2023.05.08</td>
-                                            <td><span class="ico_file">첨부</span></td>
-                                            <td>10</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td><a href="#">웃음치료사 프로그램</a></td>
-                                            <td>나OO</td>
-                                            <td>2023.04.28</td>
-                                            <td></td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td><a href="#">환경관련 프로그램</a></td>
-                                            <td>이OO</td>
-                                            <td>2023.01.28</td>
-                                            <td><span class="ico_file">첨부</span></td>
-                                            <td>198</td>
-                                        </tr>
-                                    </tbody>
+                                    
+                                    <tr>
+                                        <th><span class="must"></span>제목</th>
+                                        <td><input type="text" placeholder="제목을 입력하세요." class="w100p"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="must"></span>신청자
+                                        </th>
+                                        <td>	
+                                            <input type="text" name="m_name" id="m_name" title="신청자" placeholder="신청자 입력" onclick="nameCheck('real');" readonly="" class="w40">	
+                                            <button type="button" onclick="nameCheck('real');" class="bg_dgray"> 본인확인서비스</button>		
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>연락처</th>
+                                        <td><input type="text" placeholder="예) 010-1234-5678"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>이메일</th>
+                                        <td><input type="text" placeholder="예) abc@hanmail.net"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>과정명</th>
+                                        <td><input type="text" placeholder="예) 바리스타 2급과정"class="w100p"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>희망시기</th>
+                                        <td><input type="text" placeholder="희망시기를 입력하세요." class="w100p"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>내용</th>
+                                        <td><textarea type="text" style="width:100%;height:300px;" title="내용을 입력하세요."></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td colspan="3">
+                                            <p class="mb8"><input type="file" name="filename1" id="filename1" onchange="reviewUploadImg(this, this.name, 'hwp,xlsx,xls,pdf,jpg,gif,png,zip');" title="첨부파일" size="50"></p>
+                                            <p class="mb8"><input type="file" name="filename2" id="filename2" onchange="reviewUploadImg(this, this.name, 'hwp,xlsx,xls,pdf,jpg,gif,png,zip');" title="첨부파일" size="50"></p>
+                                            <p class="file_noti mb4 red fb1">hwp,xlsx,xls,pdf,jpg,gif,png,zip 파일만 가능합니다. 용량제한 15MB</p>
+                                        </td>
+                                    </tr>
                                 </table>
                             </div>
 
-                            <div class="pagination mt40">
-                                <ul class="paging">
-                                    <li>
-                                        <a href="#" class="ico first" title="처음페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico prev" title="이전페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="active">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico next" title="다음페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico last" title="마지막페이지"></a>
-                                    </li>
-                                </ul>
+                            <div class="bo_btn_wrap">
+                                <a href="#" class="de_con">삭제</a>
+                                <a href="#" class="cancel">취소</a>
+                                <a href="#" class="save">등록신청</a>
+                                <a href="#" class="bak_list">목록</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

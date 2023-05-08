@@ -299,108 +299,79 @@
                             </ul>
                         </div>
 
-                        <div class="top_info_box hope">
-                            <div class="box_tit">희망강좌신청 게시판 이용 안내</div>
-                            <div class="exp_text">
-                                <ul>
-                                    <li>- 평생학습으로 개설 되었으면 하는 강좌를 신청해주세요.</li>
-                                    <li>- 개설강좌명과 과정에 대한 간략한 내용과 희망 운영시간 및 장소를 기재해 주세요.</li>
-                                    <li>- 해당 개시판의 성격과 무관한 광고 또는 비방하는 내용이나 욕설이 담긴 불건전한 내용은 본인동의 없이 삭제됩니다.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="board_wrap">
-                            <div class="board_search clearfix">
-                                <div class="total fl">
-                                    전체 <span class="fb3">3개</span>의 희망강좌가 있습니다.
-                                </div>
-                                <div class="search_form fr">
-                                    <select name="keyField" title="검색구분 선택">
-                                        <option value="" selected="selected">전체</option>
-                                        <option value="title">제목</option>
-                                        <option value="text">내용</option>
-                                    </select>
-                                    <input type="text" placeholder="검색어를 입력하세요." class="s_text_a">
-                                    <button type="submit" class="btn_search">검색</button>
-                                </div>
-                            </div>
+                        <div class="board_view">
                             <div class="board_table_wrap">
-                                <table class="basic_tb1">
-                                    <caption>희망강좌 신청 리스트를 번호 제목 신청자 신청일 첨부 순으로 안내하는 표입니다.</caption>
+                                <table class="basic_tb2">
+                                    <caption>제목, 신청자, 신청일, 과정명, 희망시기, 내용순으로 희망강좌 신청내용을 보여주는 표입니다.</caption>
                                     <colgroup>
-                                        <col width="10%">
-                                        <col width="45%">
                                         <col width="15%">
+                                        <col width="35%">
                                         <col width="15%">
-                                        <col width="10%">
-                                        <col width="5%">
+                                        <col width="35%">
+
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>제목</th>
-                                            <th>신청자</th>
-                                            <th>신청일</th>
-                                            <th>첨부</th>
-                                            <th>조회수</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3</td>
-                                            <td><a href="#">미술교육 프로그램신청합니다.</a></td>
-                                            <td>김OO</td>
-                                            <td>2023.05.08</td>
-                                            <td><span class="ico_file">첨부</span></td>
-                                            <td>10</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td><a href="#">웃음치료사 프로그램</a></td>
-                                            <td>나OO</td>
-                                            <td>2023.04.28</td>
-                                            <td></td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td><a href="#">환경관련 프로그램</a></td>
-                                            <td>이OO</td>
-                                            <td>2023.01.28</td>
-                                            <td><span class="ico_file">첨부</span></td>
-                                            <td>198</td>
-                                        </tr>
-                                    </tbody>
+                                    
+                                    <tr>
+                                        <th>제목</th>
+                                        <td colspan="3">미술교육 프로그램신청합니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>신청자</th>
+                                        <td>김OO</td>
+                                        <th>신청일</th>
+                                        <td>2023.05.08</td>
+                                    </tr>
+                                    <tr>
+                                        <th>연락처</th>
+                                        <td>010-1234-5678</td>
+                                        <th>이메일</th>
+                                        <td>abcd@hanmail.net</td>
+                                    </tr>
+                                    <tr>
+                                        <th>강좌명</th>
+                                        <td>미술교육</td>
+                                        <th>희망시기</th>
+                                        <td>2023년 하반기</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="br_l_n">
+                                            <div class="board_view_body">문화예술의 발전화 여가시간 향유를 위한 미술교육 프로그램이 새롭게 열리면 좋겠습니다.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부파일</th>
+                                        <td colspan="3">
+                                            <div class="down_box dp_flex">
+                                                <a href="#" download="" class="down">타지역 미술교육현황</a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 </table>
                             </div>
 
-                            <div class="pagination mt40">
-                                <ul class="paging">
-                                    <li>
-                                        <a href="#" class="ico first" title="처음페이지"></a>
+                            <div class="view_pagination mt20">
+                                <ul class="ulfl">
+                                    <li class="prev">
+                                        <a href="#">
+                                            <span class="tag_l">이전글</span>
+                                            <p>이전글제목</p>
+                                        </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="ico prev" title="이전페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="active">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico next" title="다음페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico last" title="마지막페이지"></a>
+                                    <li class="next">
+                                        <a href="#">
+                                            <p>다음글제목</p>
+                                            <span class="tag_r">다음글</span>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
+
+                            <div class="bo_btn_wrap">
+                                <a href="#" class="de_con">삭제</a>
+                                <a href="#" class="bak_list">목록</a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

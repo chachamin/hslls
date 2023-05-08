@@ -309,17 +309,20 @@
                                 </tr>
                                 <tr>
                                     <th><span class="must"></span>URL</th>
-                                    <td><input type="text" placeholder="동영상 강의 URL을 입력하세요."></td>
+                                    <td>
+                                        <input type="text" placeholder="유튜브 주소의 뒷쪽 아이디만 넣어주세요.">
+                                        <p class="file_noti mt4 fb1">예) https://youtu.be/<span class="red">BfXzBg7U8Js</span> 주소의 빨간부분 만 입력해주세요 앞쪽 https://youtu.be/를 넣지 말아주세요!</p>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th><span class="must"></span>내용</th>
-                                    <td><input type="text"></td>
+                                    <td><textarea type="text" style="width:100%;height:300px;" title="내용을 입력하세요."></textarea></td>
                                 </tr>
                                 <tr>
                                     <th><span class="must"></span>첨부파일</th>
                                     <td>
                                         <p class="mb8"><input type="file" name="filename2" id="filename2" onchange="reviewUploadImg(this, this.name, 'hwp,xlsx,xls,pdf,jpg,gif,png');" title="첨부파일"></p>
-                                        <p class="file_noti mb4 red fb1">목록에 표현되는 이미지입니다.</p>
+                                        <p class="file_noti mb4 fb1">목록에 표현되는 이미지입니다.</p>
                                         <p class="file_noti mb4 red fb1">hwp,xlsx,xls,pdf,jpg,gif,png,zip 파일만 가능합니다. 용량제한 15MB</p>
                                     </td>
                                 </tr>

@@ -22,3 +22,14 @@
 .tab_box2 .tab li:last-child::after {display: none;}
 .tab_box2 .tab li a:hover {color: #004adf;font-weight: 500;text-decoration: underline;text-underline-position: under;}
 .tab_box2 .tab li.active a {color: #004adf;font-weight: 500;text-decoration: underline;text-underline-position: under;}
+
+.top_info_box {width: 100%;border-radius: 15px 15px 35px 15px;background:#f4f4f4;padding: 30px 30px 30px 100px;position: relative;margin-bottom: 30px;}
+.top_info_box::after {content: '';display: block;width: 55px;height: 55px;background: url(../img/noti_ico.png) no-repeat center;position: absolute;top: 30px;left: 30px;}
+.top_info_box .box_tit {font-size: 1.25em;font-weight: 500;margin-bottom: 10px;}
+.top_info_box .exp_text > ul > li {padding-left: 5px;margin-bottom: 5px;font-size: 0.938em;}
+.top_info_box .exp_text > ul > li:last-child {margin-bottom: 0;}
+.ico_file {background: url(../img/sub_ir.png) -434px -9px;text-indent: -9999px;display: inline-block;width: 25px;height: 25px;}
+
+
+
+

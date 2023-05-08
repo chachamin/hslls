@@ -63,6 +63,30 @@ $(document).ready(function(){
 		$('.current').text(nextSlide + 1);
 		});
 
+	//view_sd
+	$('.view_sd').on('init', function(event, slick) {
+		$(this).siblings('.slick-controls').children('.slick-nav').children('.counter').append('<span class="current"></span> / <span class="totals"></span>');
+		$('.current').text(slick.currentSlide + 1);
+		$('.totals').text(slick.slideCount);
+	  })
+	  main_visual = $('.view_sd').slick({
+		  autoplay: true,
+		  dots: false,
+		  pauseOnDotsHover: false,
+		  pauseOnHover: false,
+		  speed: 600,
+		  arrows: false,
+		  autoplaySpeed: 5000,
+		  fade: false,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  infinite: true,
+		  cssEase: 'linear'
+		  
+	  }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+		$('.current').text(nextSlide + 1);
+	  });
+
 	//공동 재생 멈춤
 	slick_stop = $('.slick-stop').on('click', function() {
 		$(this).siblings('.slick-play').css('display','inline-block').focus();
@@ -98,7 +122,7 @@ $(document).ready(function(){
 		$('.sd_le_main').slick("setPosition");
 	});
 
-	// 자연휴양림 tab
+	// 공지사항 tab
 	$('.news_tab_wrap > li > a.font_g').on('focus click' ,function(){
 		$(this).addClass('active');		
 		$(this).parent('li').siblings('li').find('a').removeClass('active');		
