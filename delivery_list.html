@@ -291,12 +291,23 @@
                     </div>
                     <div id="subContent" class="sub_content">
                         <div class="sub_title_box dp_flex f_v_c">
-                            <h3 class="sub_title">학습동아리신청</h3>
+                            <h3 class="sub_title">찾아가는 평생학습 강좌 신청/현황</h3>
                             <ul class="screen_unit dp_flex">							
                                 <li><a title="화면크기 크게 변경" href="#this" class="btn-zoomup"><span>화면크기 크게 변경</span></a></li>
                                 <li><a title="화면크기 작게 변경" href="#this" class="btn-zoomdown"><span>화면크기 작게 변경</span></a></li>
                                 <li><a title="페이지 인쇄" href="#this" onclick="window.print();return false;" class="print">PRINT</a></li>
                             </ul>
+                        </div>
+
+                        <div class="top_info_box delivery">
+                            <div class="box_tit">찾아가는 평생학습 강좌 신청 안내</div>
+                            <div class="exp_text">
+                                찾아가는 평생학습 강좌 신청서를 다운로드 후 작성하여 첨부해주세요.
+                            </div>
+                            <div class="apply_box">
+                                <a href="#none" download="" class="form_down">찾아가는 평생학습 강좌 신청서</a>
+                                <a href="#none" class="move_app">강좌 신청하기</a>
+                            </div>
                         </div>
 
                         <div class="board_wrap">
@@ -307,79 +318,82 @@
                                 <div class="search_form fr">
                                     <select name="keyField" title="검색구분 선택">
                                         <option value="" selected="selected">전체</option>
-                                        <option value="title">동아리명</option>
-                                        <option value="master">대표</option>
+                                        <option value="title">강좌명</option>
+                                        <option value="m_name">신청자</option>
                                     </select>
                                     <input type="text" placeholder="검색어를 입력하세요." class="s_text_a">
                                     <button type="submit" class="btn_search">검색</button>
                                 </div>
                             </div>
                             <div class="board_table_wrap">
-                                <table class="basic_tb2">
-                                    <caption>학습동아리 신청현황을 번호, 동아리명, 대표, 동아리유형, 승인상태로 안내하는 표입니다.</caption>
+                                <table class="basic_tb1">
+                                    <caption>번호, 강좌명, 신청자, 신청일, 승인상태</caption>
                                     <colgroup>
-                                        <col width="5%">
+                                        <col width="10%">
                                         <col width="45%">
                                         <col width="15%">
-                                        <col width="20%">
+                                        <col width="15%">
                                         <col width="15%">
                                     </colgroup>
                                     <thead>
                                         <tr>
                                             <th>번호</th>
-                                            <th>동아리명</th>
-                                            <th>대표</th>
-                                            <th>동아리유형</th>
-                                            <th class="br_r_n">승인상태</th>
+                                            <th>강좌명</th>
+                                            <th>신청자</th>
+                                            <th>신청일</th>
+                                            <th>승인상태</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="t_a_c">
-                                            <td class="br_l_n">3</td>
-                                            <td><a href="#">화순사랑 환경지킴이</a></td>
-                                            <td>나화순</td>
-                                            <td>문제해결형</td>
-                                            <td>
-                                                <span class="approve_ap">승인신청</span>
-                                                <span class="approve_wa">승인대기</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="t_a_c">
-                                            <td class="br_l_n">2</td>
-                                            <td><a href="#">바른말 우리말</a></td>
-                                            <td>나화순</td>
-                                            <td>심화학습형</td>
-                                            <td>
-                                                <span class="approve_ap">승인신청</span>
-                                                <span class="approve_wa">승인대기</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="t_a_c">
-                                            <td class="br_l_n">1</td>
-                                            <td><a href="#">화순사랑 합창단</a></td>
-                                            <td>나화순</td>
-                                            <td>사회참여형(재능나눔)</td>
-                                            <td>
-                                                <span class="approve_ap">승인신청</span>
-                                                <span class="approve_wa">승인대기</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><a href="#">토탈공예</a></td>
+                                            <td>김OO</td>
+                                            <td>2023.05.08</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
-                                            <td colspan="5" class="br_l_n t_a_c">등록된 정보가 없습니다.</td>
+                                            <td>2</td>
+                                            <td><a href="#">전래놀이</a></td>
+                                            <td>나OO</td>
+                                            <td>2023.04.28</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a href="#">한지공예</a></td>
+                                            <td>이OO</td>
+                                            <td>2023.01.28</td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
-
                             </div>
 
-                            <div class="bo_btn_wrap">
-                                <a href="#" class="write">등록</a>
+                            <div class="pagination mt40">
+                                <ul class="paging">
+                                    <li>
+                                        <a href="#" class="ico first" title="처음페이지"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="ico prev" title="이전페이지"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="active">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="ico next" title="다음페이지"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="ico last" title="마지막페이지"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

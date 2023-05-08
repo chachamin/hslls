@@ -291,7 +291,7 @@
                     </div>
                     <div id="subContent" class="sub_content">
                         <div class="sub_title_box dp_flex f_v_c">
-                            <h3 class="sub_title">학습동아리신청</h3>
+                            <h3 class="sub_title">동아리 신청</h3>
                             <ul class="screen_unit dp_flex">							
                                 <li><a title="화면크기 크게 변경" href="#this" class="btn-zoomup"><span>화면크기 크게 변경</span></a></li>
                                 <li><a title="화면크기 작게 변경" href="#this" class="btn-zoomdown"><span>화면크기 작게 변경</span></a></li>
@@ -299,89 +299,77 @@
                             </ul>
                         </div>
 
-                        <div class="board_wrap">
-                            <div class="board_search clearfix">
-                                <div class="total fl">
-                                    전체 <span class="fb3">3개</span>의 게시물이 있습니다.
-                                </div>
-                                <div class="search_form fr">
-                                    <select name="keyField" title="검색구분 선택">
-                                        <option value="" selected="selected">전체</option>
-                                        <option value="title">동아리명</option>
-                                        <option value="master">대표</option>
-                                    </select>
-                                    <input type="text" placeholder="검색어를 입력하세요." class="s_text_a">
-                                    <button type="submit" class="btn_search">검색</button>
-                                </div>
-                            </div>
+                        <div class="board_view">
                             <div class="board_table_wrap">
                                 <table class="basic_tb2">
-                                    <caption>학습동아리 신청현황을 번호, 동아리명, 대표, 동아리유형, 승인상태로 안내하는 표입니다.</caption>
+                                    <caption>동아리명, 동아리 유형, 회원수, 작성자, 동아리 대표, 연락처, 이메일, 동아리등룩서류를 제공하는 표입니다.</caption>
                                     <colgroup>
-                                        <col width="5%">
-                                        <col width="45%">
-                                        <col width="15%">
                                         <col width="20%">
-                                        <col width="15%">
+                                        <col width="30%">
+                                        <col width="20%">
+                                        <col width="30%">
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>동아리명</th>
-                                            <th>대표</th>
-                                            <th>동아리유형</th>
-                                            <th class="br_r_n">승인상태</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="t_a_c">
-                                            <td class="br_l_n">3</td>
-                                            <td><a href="#">화순사랑 환경지킴이</a></td>
-                                            <td>나화순</td>
-                                            <td>문제해결형</td>
-                                            <td>
-                                                <span class="approve_ap">승인신청</span>
-                                                <span class="approve_wa">승인대기</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="t_a_c">
-                                            <td class="br_l_n">2</td>
-                                            <td><a href="#">바른말 우리말</a></td>
-                                            <td>나화순</td>
-                                            <td>심화학습형</td>
-                                            <td>
-                                                <span class="approve_ap">승인신청</span>
-                                                <span class="approve_wa">승인대기</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="t_a_c">
-                                            <td class="br_l_n">1</td>
-                                            <td><a href="#">화순사랑 합창단</a></td>
-                                            <td>나화순</td>
-                                            <td>사회참여형(재능나눔)</td>
-                                            <td>
-                                                <span class="approve_ap">승인신청</span>
-                                                <span class="approve_wa">승인대기</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5" class="br_l_n t_a_c">등록된 정보가 없습니다.</td>
-                                        </tr>
-                                    </tbody>
+                                    
+                                    <tr>
+                                        <th>동아리명</th>
+                                        <td colspan="3">화순사랑 환경지킴이</td>
+                                    </tr>
+                                    <tr>
+                                        <th>동아리유형</th>
+                                        <td>문제해결형</td>
+                                        <th>회원수</th>
+                                        <td>20명</td>
+                                    </tr>
+                                    <tr>
+                                        <th>작성자</th>
+                                        <td>홍길동</td>
+                                        <th>대표자</th>
+                                        <td>나화순</td>
+                                    </tr>
+                                    <tr>
+                                        <th>연락처</th>
+                                        <td>010-1234-5675</td>
+                                        <th>이메일</th>
+                                        <td>abcd@hanmail.net</td>
+                                    </tr>
+                                    <tr>
+                                        <th>동아리등록서류</th>
+                                        <td colspan="3">
+                                            <div class="down_box dp_flex">
+                                                <a href="#" download="" class="down">동아리지원서류</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>승인상태</th>
+                                        <td>
+                                            <select name="approve_list" title="승인상태 선택">
+                                                <option value="" selected="selected">승인상태</option>
+                                                <option value="approve_ap">승인신청</option>
+                                                <option value="approve_wa"">승인대기</option>
+                                                <option value="approve_ok">승인완료</option>
+                                                <option value="approve_no">승인불가</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>승인상태</th>
+                                        <td colspan="3">
+                                            <span class="approve_ap">승인신청</span>
+                                            <span class="approve_wa">승인대기</span>
+                                            <span class="approve_ok">승인</span>
+                                            <span class="approve_no">승인불가</span>
+                                        </td>
+                                    </tr>
                                 </table>
-
                             </div>
-
                             <div class="bo_btn_wrap">
-                                <a href="#" class="write">등록</a>
+                                <a href="#" class="de_con">삭제</a>
+                                <a href="#" class="modify">수정</a>
+                                <a href="#" class="bak_list">목록</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
