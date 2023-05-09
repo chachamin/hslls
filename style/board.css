@@ -241,7 +241,8 @@ table .board_view_body {border: none;}
 
 /* 갤러리 슬라이드 뷰 */
 .sd_wp{position:relative;}
-.view_sd .item,.one_pg .img_box .item{height:340px;text-align:center;}
+/* .view_sd .item,.one_pg .img_box .item{height:340px;text-align:center;} */
+.view_sd .item,.one_pg .img_box .item{height:500px;text-align:center;}
 .view_sd .item img,.one_pg .img_box img{height:100%;border-radius:8px;display:inline-block;}
 
 .sd_wp .slick-controls{position:relative;margin-top:-28px;text-align:center;}
@@ -255,8 +256,10 @@ table .board_view_body {border: none;}
 .sd_wp .slick-nav a.slick-stop{background-position:-92px -49px;}
 .sd_wp .slick-nav a.slick-play{background-position:-137px -49px;display: none;}
 
-.gallery_view .sd_wp{padding:60px 0 40px;background:#fafafa;}
-.gallery_view .view_sd {width:680px;margin:0 auto;border:6px solid #eee;border-radius:8px;background:#fff;box-shadow: 4px 4px 24px 5px rgb(0,0,0,0.02);}
+/* .gallery_view .sd_wp{padding:60px 0 40px;background:#fafafa;} */
+/* .gallery_view .view_sd {width:680px;margin:0 auto;border:6px solid #eee;border-radius:8px;background:#fff;box-shadow: 4px 4px 24px 5px rgb(0,0,0,0.02);} */
+.gallery_view .sd_wp{padding:20px 0 20px;}
+.gallery_view .view_sd {margin:0 auto;border:6px solid #eee;border-radius:8px;background:#fff;box-shadow: 4px 4px 24px 5px rgb(0,0,0,0.02);}
 .gallery_view .item img{height:100%;border-radius:8px;display:inline-block;}
 
 /* 게시판 첨부파일다운로드 */

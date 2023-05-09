@@ -132,8 +132,6 @@ $(document).ready(function(){
 		$(this).parent('li').siblings('li').find('a.more').css('display','none');
 	});
 
-	
-
 	// -------------------------- 강좌정보등록  선택 활성화 --------------------------
 	$(".way_chk").click(function () {
 		if ($(this).is(":checked")) {
@@ -152,6 +150,80 @@ $(document).ready(function(){
 			$(this).parent().siblings().children(".tea_text").attr("disabled", "disabled");
 		}
 	});
+
+	// Side Menu
+	var menu_v = $('div.menu_v');
+	var sItem = menu_v.find('>ul>li');
+	var ssItem = menu_v.find('>ul>li>ul>li');
+	var lastEvent = null;
+	sItem.find('>ul').css('display','none');
+	menu_v.find('>ul>li>ul>li[class=active]').parents('li').attr('class','active');
+	menu_v.find('>ul>li[class=active]').find('>ul').css('display','block');
+	function menu_vToggle(event){
+		var t = $(this);
+		if (this == lastEvent) return false;
+		lastEvent = this;
+		setTimeout(function(){ lastEvent=null }, 4000);
+		if (t.next('ul').is(':hidden')) {
+			sItem.find('>ul').slideUp(2000);
+			t.next('ul').slideDown(2000);
+		} else if(!t.next('ul').length) {
+			sItem.find('>ul').slideUp(2000);
+		} else {
+			t.next('ul').slideUp(2000);
+		}
+		if (t.parent('li').hasClass('active')){
+			t.parent('li').removeClass('active');
+		} else {
+			sItem.removeClass('active');
+			t.parent('li').addClass('active');
+		}
+	}
+
+	// -------------------------- 스킵네비 포커스잡아주기--------------------------
+    $("#skipNavi > a").click(function(){
+		$($(this).attr("href"))
+		  .attr("tabindex","0")
+		  .css("outline","0")
+		  .focus();
+		});
+	
+		// Select all links with hashes
+		$('a.smooth[href*="#"]')
+		  // Remove links that don't actually link to anything
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+			// On-page links
+			if (
+			  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			  && 
+			  location.hostname == this.hostname
+			) {
+			  // Figure out element to scroll to
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			  // Does a scroll target exist?
+			  if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+				  scrollTop: target.offset().top
+				}, 1000, function() {
+				  // Callback after animation
+				  // Must change focus!
+				  var $target = $(target);
+				  $target.focus();
+				  if ($target.is(":focus")) { // Checking if the target was focused
+					return false;
+				  } else {
+					$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+					$target.focus(); // Set focus again
+				  };
+				});
+			  }
+			}
+		  });
 
 
 });
@@ -253,4 +325,32 @@ $(function(){
 		});
 	});
 
+	// -------------------------- 화면확대축소 --------------------------
+
+$(function(){
+
+	var zoom = 1;
+	$(".btn-zoomup").click(function() {
+		var T = Number('1e'+1);
+		if(zoom == 1.5){
+			alert("최대 화면 크기 입니다.\n더 이상 확대하실 수 없습니다");
+			return false;
+		}
+		zoom = Math.round((zoom+0.1)*T)/T;
+		$("body").css("zoom",zoom);
+	});
+	$(".btn-zoomdown").click(function() {
+		var T = Number('1e'+1);
+		if(zoom == .8) {
+			alert("최소 화면 크기 입니다.\n더 이상 축소하실 수 없습니다.");
+			return false;
+		}
+		zoom = Math.round((zoom-0.1)*T)/T;
+		$("body").css("zoom",zoom);
+	});
+	$(".btn-zoom100").click(function() {
+		zoom = 1;
+		$("body").attr("style",'');
+	});
+});	
 
