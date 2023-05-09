@@ -25,10 +25,39 @@
 
 .top_info_box {width: 100%;border-radius: 15px 15px 35px 15px;background:#f4f4f4;padding: 30px 30px 30px 100px;position: relative;margin-bottom: 30px;}
 .top_info_box::after {content: '';display: block;width: 55px;height: 55px;background: url(../img/noti_ico.png) no-repeat center;position: absolute;top: 30px;left: 30px;}
-.top_info_box .box_tit {font-size: 1.25em;font-weight: 500;margin-bottom: 10px;}
+.top_info_box .box_tit {font-size: 1.25em;font-weight: 600;margin-bottom: 10px;color: #435fa5;}
 .top_info_box .exp_text > ul > li {padding-left: 5px;margin-bottom: 5px;font-size: 0.938em;}
 .top_info_box .exp_text > ul > li:last-child {margin-bottom: 0;}
+.top_info_box .info_btn_box{display: flex;margin-top: 15px;}
+.top_info_box .info_btn_box a {padding: 10px 40px 10px 15px;border: 1px solid #121212;border-radius: 7px; margin-right: 10px;position: relative;background-color: #fff;}
+.top_info_box .info_btn_box a::after {content: '';display: block;width: 20px;height: 20px;background: url(../img/sub_ir.png) -179px -51px no-repeat;position: absolute;top: 10px;right: 15px;}
+.top_info_box .info_btn_box a.move_app::after {background-position: -210px -51px;}
+.top_info_box .info_btn_box a:hover {box-shadow: 0 5px 15px -2px rgba(180, 180, 180, 0.3);border: 1px solid #388f2c;}
+
 .ico_file {background: url(../img/sub_ir.png) -434px -9px;text-indent: -9999px;display: inline-block;width: 25px;height: 25px;}
+
+.sub_content .subtitle_1 {font-weight: 600;margin-bottom: 15px;}
+
+.sub_sec .sec02 {margin-top: 30px;}
+
+/* 학습동아리신청 */
+.ed_club .sec01 .con_box li {position: relative;padding: 5px 0 5px 15px;}
+
+.ed_club .sec02 .step_arrow{border: 1px solid #ddd;border-radius: 15px;}
+.ed_club .sec02 .step_arrow ul {display: flex;}
+.ed_club .sec02 .step_arrow li {width: 25%;text-align: center;padding:120px 20px 30px 20px;position: relative;}
+.ed_club .sec02 .step_arrow li::after {content: '';display: block;width: 50px;height: 50px;border-radius: 50%;position: absolute;top: 70px;right: -25px;background: url(../img/sub_ir.png) 9px -76px #fff;z-index: 1;}
+.ed_club .sec02 .step_arrow li:last-child::after {display: none;}
+.ed_club .sec02 .step_arrow li::before {content: '';display: block;width: 60px;height: 60px;position: absolute;top: 40px;left: 50%;transform: translateX(-50%);z-index: 1;}
+.ed_club .sec02 .step_arrow li:nth-child(1)::before {background: url(../img/ico_step_01.png) no-repeat center;}
+.ed_club .sec02 .step_arrow li:nth-child(2)::before {background: url(../img/ico_step_02.png) no-repeat center;}
+.ed_club .sec02 .step_arrow li:nth-child(3)::before {background: url(../img/ico_step_03.png) no-repeat center;}
+.ed_club .sec02 .step_arrow li:nth-child(4)::before {background: url(../img/ico_step_04.png) no-repeat center;}
+
+.ed_club .sec02 .step_arrow li:nth-child(2n) {background-color: #f4f4f4;}
+
+.ed_club .sec02 .step_arrow li span {padding:5px 15px;background-color: #435fa5;color: #fff;border-radius: 20px;margin-bottom: 10px;font-size: 0.875em;}
+.ed_club .sec02 .step_arrow li p {font-weight: 500;}
 
 
 

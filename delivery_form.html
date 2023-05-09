@@ -291,7 +291,7 @@
                     </div>
                     <div id="subContent" class="sub_content">
                         <div class="sub_title_box dp_flex f_v_c">
-                            <h3 class="sub_title">찾아가는 평생학습 강좌 신청/현황</h3>
+                            <h3 class="sub_title">학습동아리신청</h3>
                             <ul class="screen_unit dp_flex">							
                                 <li><a title="화면크기 크게 변경" href="#this" class="btn-zoomup"><span>화면크기 크게 변경</span></a></li>
                                 <li><a title="화면크기 작게 변경" href="#this" class="btn-zoomdown"><span>화면크기 작게 변경</span></a></li>
@@ -299,118 +299,110 @@
                             </ul>
                         </div>
 
-                        <div class="top_info_box delivery">
-                            <div class="box_tit">찾아가는 평생학습 강좌 신청 안내</div>
-                            <div class="exp_text">
-                                찾아가는 평생학습 강좌 신청서를 다운로드 후 작성하여 첨부해주세요.
+                        <div class="board_form">
+                            <div class="service_check">
+                                <div class="info_tit">개인정보 수집·이용·제공 동의</div>
+                                <div class="personal_info">
+                                    <p>화순군에서는 「개인정보보호법」에 의거, 찾아가는 평생학습 강좌 신청자의 개인(신상)정보를 아래와 같이 수집 활용하고자 합니다. 충분히 읽어보신 후, 동의 여부를 체크하여 주시기 바랍니다.</p>
+                                    <ul>
+                                        <li>
+                                            <p class="fb1">개인정보 수집·이용 목적</p>
+                                            <p>찾아가는 평생학습강좌 신청자 및 대표자의 인적사항 확인, 평생학습 담당자에 의한 공지 및 연락 용도</p>
+                                        </li>
+                                        <li>
+                                            <p class="fb1">수집하는 개인정보의 항목</p>
+                                            <p>찾아가는 평생학습강좌 신청자의 이름, 연락처, 이메일, 주소, 생년월일</p>
+                                        </li>
+                                        <li>
+                                            <p class="fb1">개인정보의 보유 및 이용 기간</p>
+                                            <p>개인정보 보유기간은 관련 법규에 병시된 바에 따르며, 개인정보 제공자가 철회 요청시 파기합니다.</p>
+                                        </li>
+                                        <li>
+                                            <p class="fb1">동의 거부 권리 및 거부 시 불이익</p>
+                                            <p>위 개인정보의 수집·이용·제공과 관련하여 개인정보 동의를 거부할 수 있습니다. 다만, 상기 개인정보는 찾아가는 평생학습강좌 신청에 반드시 필요한 정보이므로 수집 활용을 거부하실 경우 신청이 불가능함을 알려드립니다.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="agree_wrap">
+                                        <p class="fb1">개인정보 수집 및 활용</p>
+                                        <div class="dp_flex">
+                                            <span class="radio"><input type="radio" name="agree" value="ok" id="agreeY"><label for="agreeY">동의</label></span>
+                                            <span class="radio"><input type="radio" name="agree" value="no" id="agreeN"><label for="agreeN">비동의</label></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info_btn_box">
-                                <a href="#none" download="" class="form_down">찾아가는 평생학습 강좌 신청서</a>
-                                <a href="#none" class="move_app">강좌 신청하기</a>
-                            </div>
-                        </div>
 
-                        <div class="board_wrap">
-                            <div class="board_search clearfix">
-                                <div class="total fl">
-                                    전체 <span class="fb3">3개</span>의 게시물이 있습니다.
-                                </div>
-                                <div class="search_form fr">
-                                    <select name="keyField" title="검색구분 선택">
-                                        <option value="" selected="selected">전체</option>
-                                        <option value="title">강좌명</option>
-                                        <option value="m_name">신청자</option>
-                                    </select>
-                                    <input type="text" placeholder="검색어를 입력하세요." class="s_text_a">
-                                    <button type="submit" class="btn_search">검색</button>
-                                </div>
-                            </div>
-                            <div class="board_table_wrap">
-                                <table class="basic_tb1">
-                                    <caption>번호, 강좌명, 신청자, 신청일, 승인상태</caption>
+                            <div class="bo_form_wrap mt30">
+                                <div class="info_tit">찾아가는 평생학습강좌 신청자 정보</div>
+                                <p class="must_noti">(*)필수입력항목입니다.</p>
+                                <table class="basic_tb3">
+                                    <caption>구분, 성명, 핸드폰번호, 주소, 이메일, 강의장소, 강좌희망일을 입력하는 폼입니다.</caption>
                                     <colgroup>
-                                        <col width="10%">
-                                        <col width="45%">
-                                        <col width="15%">
-                                        <col width="15%">
-                                        <col width="15%">
+                                        <col width="20%">
+                                        <col width="30%">
+                                        <col width="20%">
+                                        <col width="30%">
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>강좌명</th>
-                                            <th>작성자</th>
-                                            <th>등록일</th>
-                                            <th>승인상태</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3</td>
-                                            <td><a href="#">토탈공예</a></td>
-                                            <td>김OO</td>
-                                            <td>2023.05.08</td>
-                                            <td>
-                                                <span class="approve_wa">대기</span>
-                                                <span class="approve_ap">접수</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td><a href="#">전래놀이</a></td>
-                                            <td>나OO</td>
-                                            <td>2023.04.28</td>
-                                            <td>
-                                                <span class="approve_wa">대기</span>
-                                                <span class="approve_ap">접수</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td><a href="#">한지공예</a></td>
-                                            <td>이OO</td>
-                                            <td>2023.01.28</td>
-                                            <td>
-                                                <span class="approve_wa">대기</span>
-                                                <span class="approve_ap">접수</span>
-                                                <span class="approve_ok">승인</span>
-                                                <span class="approve_no">승인불가</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                    <tr>
+                                        <th><span class="must"></span>구분</th>
+                                        <td >
+                                            <span class="radio"><input type="radio" name="deli_tyep" value="new" id="newY"><label for="newY">신규팀</label></span>
+                                            <span class="radio"><input type="radio" name="deli_tyep" value="existing" id="newN"><label for="newN">기존팀</label></span>
+                                        </td>
+                                        <th><span class="must"></span>작성자</th>
+                                        <td>홍길동</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>핸드폰번호</th>
+                                        <td><input type="text" placeholder="예) 010-1234-5678"></td>
+                                        <th><span class="must"></span>이메일</th>
+                                        <td><input type="text" placeholder="예) abcd@hanmail.net"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>주소</th>
+                                        <td colspan="3" class="address">
+                                            <div>
+                                                <input type="text" id="userZip" name="zipcode" onclick="addrIns()" readonly  placeholder="우편번호 자동입력" title="우편번호 자동입력" >&nbsp;&nbsp;
+                                                <input type="text" id="userAddr1" name="addr1"  value="" onclick="addrIns()"  readonly placeholder="주소 자동입력" title="주소 자동입력" class="w40p">
+                                                <button type="button"  onclick="addrIns()" class="bg_dgray"> 주소찾기</button>
+                                            </div>
+                                            <div><input type="text" id="userAddr2" name="addr2" class="w100p mt8" placeholder="상세주소 입력" title="상세주소 입력" ></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>강의장소</th>
+                                        <td><input type="text" placeholder="강의장소를 입력하세요."></td>
+                                        <th><span class="must"></span>희망일</th>
+                                        <td><input type="text" placeholder="강의 희망일을 입력하세요."></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="must"></span>신청서</th>
+                                        <td colspan="3">
+                                            <p class="mb8"><input type="file" name="filename0" id="filename0" onchange="reviewUploadImg(this, this.name, 'hwp,xlsx,xls,pdf,jpg,gif,png,zip');" title="첨부파일"></p>
+                                            <p class="file_noti mb4 red fb1">hwp,xlsx,xls,pdf,jpg,gif,png,zip 파일만 가능합니다. 용량제한 20MB</p>
+                                        </td>
+                                    </tr>
                                 </table>
-                            </div>
 
-                            <div class="pagination mt40">
-                                <ul class="paging">
-                                    <li>
-                                        <a href="#" class="ico first" title="처음페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico prev" title="이전페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="active">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico next" title="다음페이지"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="ico last" title="마지막페이지"></a>
-                                    </li>
-                                </ul>
+                                <div class="round_box7">
+                                    <ul>
+                                        <li>찾아가는평생학습강좌 신청서를 첨부파일로 반드시 제출해주세요.</li>
+                                        <li>제출 서류 중 학습자 명단은 해당 학습자의 자필 서명이 반드시 필요합니다.</li>
+                                        <li class="red fb1">제출 서류 중 강의장 사진 미첨부 시 심사대상에서 제외됩니다..</li>
+                                        <li class="red fb1">찾아가는 평생학습강좌 신청서를 첨부하지 않으면 승인이 불가합니다.</li>
+                                        <li>등록문의 : 화순군 평생학습관 (061)379-3134</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="bo_btn_wrap">
+                                <a href="#" class="cancel">취소</a>
+                                <a href="#" class="save">저장</a>
+                                <a href="#" class="bak_list">목록</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

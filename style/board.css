@@ -20,7 +20,7 @@
 .pagination ul li{display:inline-block;vertical-align:middle;text-align:center;line-height:35px}
 .pagination ul li a{display:block;width:35px;height:35px;}
 .pagination ul li a.active{background:#083797;color:#fff;font-weight:500}
-.pagination ul li a.ico{border:1px solid #ddd;font-size:0;margin-left:-4px;background:url('/img/sub_ir.png') no-repeat -199px -2px #fff}
+.pagination ul li a.ico{border:1px solid #ddd;font-size:0;margin-left:-4px;background:url('../img/sub_ir.png') no-repeat -199px -2px #fff}
 .pagination ul li a.prev{background-position:-241px  -2px;margin-right:10px;}
 .pagination ul li a.next{background-position:-284px  -2px;margin-left:10px}
 .pagination ul li a.first{border-radius: 10px 0 0 10px;}

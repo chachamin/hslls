@@ -300,17 +300,33 @@
                         </div>
 
                         <div class="board_wrap">
+                            <div class="board_search clearfix">
+                                <div class="total fl">
+                                    전체 <span class="fb3">1개</span>의 게시물이 있습니다.
+                                </div>
+                                <div class="search_form fr">
+                                    <select name="keyField" title="검색구분 선택">
+                                        <option value="" selected="selected">전체</option>
+                                        <option value="m_name">강사명</option>
+                                        <option value="type">강좌분류</option>
+                                    </select>
+                                    <input type="text" placeholder="검색어를 입력하세요." class="s_text_a">
+                                    <button type="submit" class="btn_search">검색</button>
+                                </div>
+                            </div>
                             <div class="board_table_wrap">
                                 <table class="basic_tb2">
                                     <caption>강사현황을 강사명 강좌분류 강의분야 승인상태로 안내하는 표입니다.</caption>
                                     <colgroup>
-                                        <col width="20%">
+                                        <col width="5%">
+                                        <col width="10%">
                                         <col width="30%">
                                         <col width="40%">
-                                        <col width="10%">
+                                        <col width="15%">
                                     </colgroup>
                                     <thead>
                                         <tr>
+                                            <th>번호</th>
                                             <th>강사명</th>
                                             <th>강좌분류</th>
                                             <th>강의분야</th>
@@ -319,7 +335,8 @@
                                     </thead>
                                     <tbody>
                                         <tr class="t_a_c">
-                                            <td class="br_l_n"><a href="#">김강사</a></td>
+                                            <td class="br_l_n">1</td>
+                                            <td><a href="#">김강사</a></td>
                                             <td>취업교육</td>
                                             <td>재취업정보교육</td>
                                             <td>
@@ -329,7 +346,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="br_l_n t_a_c">등록된 정보가 없습니다.</td>
+                                            <td colspan="5" class="br_l_n t_a_c">등록된 정보가 없습니다.</td>
                                         </tr>
                                     </tbody>
                                 </table>

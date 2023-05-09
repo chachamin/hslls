@@ -26,7 +26,7 @@
 #gnb > ul > li{display:inline-block;}
 #gnb > ul > .depth1 > a{position:relative;display:block;padding:32px 20px 32px;font-size:1.313rem;font-weight:600;}
 #gnb > ul > li > a:hover,
-#gnb > ul > li > a:focus{color:#00a0c9}
+#gnb > ul > li > a:focus{color:#004adf;}
 /* #gnb > ul > li > a:before{content:'';position:absolute;left:10%;top:86px;display:block;width:80%;height:0px;opacity:.7;background:#00a0c9;transition: all .3s ease-in-out;} */
 #gnb > ul > li > a:hover:before,
 #gnb > ul > li > a:focus:before{top:86px;height:4px;opacity:.4;}
