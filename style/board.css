@@ -15,6 +15,11 @@
 .board_search .btn_search{background: #083797;height:46px;width:95px;line-height:46px;border:0;border-radius: 0 10px 10px 0;color: #fff;padding: 0 8px;}
 .board_search .br_ra_l {border-radius: 10px 0 0 10px;}
 
+/* 공지, 새글 왼쪽 정렬*/
+table .bo_notice{padding: 5px 10px;border-radius: 20px;background-color: #ff8b17;font-size: 0.875em;color: #fff;}
+table .bo_new {margin-left: 7px;font-size: 0.875em;font-weight: 700;vertical-align: top;}
+table .subject_l {text-align: left !important;}
+
 /* 페이징 */
 .pagination{text-align:center;margin-top:10px}
 .pagination ul li{display:inline-block;vertical-align:middle;text-align:center;line-height:35px}
@@ -224,6 +229,10 @@ table tr td span[class*="approve_"] {padding: 5px 10px;font-size: 0.875em;border
 
 .bogal_list > ul.no_stext > li .text_box {min-height: 105px;}
 
+/* 갤러리 게시글 없을때 */
+.bogal_list > ul > li.no_result {padding: 40px;width: 100%;text-align: center;}
+.bogal_list > ul > li.no_result:hover {border: 1px solid #ddd;box-shadow: 4px 4px 24px 5px rgb(0,0,0,0.05);}
+
 /* 일반게시판 뷰*/
 .board_view_head{padding:36px 0 30px; border-top:3px solid #000;border-bottom:1px solid #ddd;}
 .board_view_head h3{font-size:1.75em;font-weight:600;}
@@ -273,5 +282,12 @@ table .board_view_body {border: none;}
 .add_file2 .flieDlist a{position:relative;display:block;min-height:44px;padding:16px 30px 16px 52px;margin-top:-1px;background:#f9f9f9;font-size:14px;color:#296aac;border:1px solid #eee}
 .add_file2 .flieDlist a:before{content:"";position:absolute;left:30px;top:13px;display:inline-block;;width:20px;height:20px;background:url(../img/sub_ir.png) -475px -9px no-repeat;}
 .add_file2 .flieDlist span{display:block;min-height:44px;padding:16px 30px 16px 16px;margin-top:-1px;background:#f9f9f9;font-size:14px;color:#777;border:1px solid #eee}
+
+.add_file3{padding:20px 0 30px;border-bottom:1px solid #000;}
+.add_file3 .flieDlist {margin-top:10px;min-height:44px;background:#f9f9f9;}
+.add_file3 .flieDlist li {border:1px solid #eee;background:#f9f9f9;}
+.add_file3 .flieDlist a:first-child {position:relative;min-height:44px;padding:16px 20px 16px 52px;margin-top:-1px;font-size:14px;color:#296aac;}
+.add_file3 .flieDlist a:first-child:before{content:"";position:absolute;left:30px;top:13px;display:inline-block;;width:20px;height:20px;background:url(../img/sub_ir.png) -475px -9px no-repeat;}
+.add_file3 .flieDlist a:last-child {padding:5px 10px;margin-top:-1px;font-size:14px;border:1px solid #565656; color: #323232;font-size: 0.725em;border-radius: 5px;}
 
 
