@@ -28,7 +28,7 @@
 
 .top_info_box {width: 100%;border-radius: 15px 15px 35px 15px;background:#f4f4f4;padding: 30px 30px 30px 100px;position: relative;margin-bottom: 30px;}
 .top_info_box::after {content: '';display: block;width: 55px;height: 55px;background: url(../img/noti_ico.png) no-repeat center;position: absolute;top: 30px;left: 30px;}
-.top_info_box .box_tit {font-size: 1.25em;font-weight: 600;margin-bottom: 10px;color: #435fa5;}
+.top_info_box .box_tit {font-size: 1.375em;font-weight: 600;margin-bottom: 10px;color: #435fa5;}
 .top_info_box .exp_text > ul > li {padding-left: 5px;margin-bottom: 5px;font-size: 0.938em;}
 .top_info_box .exp_text > ul > li:last-child {margin-bottom: 0;}
 .top_info_box .info_btn_box{display: flex;margin-top: 15px;}
@@ -41,7 +41,7 @@
 
 .sub_content .subtitle_1 {font-weight: 600;margin-bottom: 15px;}
 
-.sub_sec .sec02 {margin-top: 40px;}
+.sub_sec .sec02 {margin-top: 30px;}
 
 /* 학습동아리신청 */
 .ed_club .sec01 .con_box li {position: relative;padding: 5px 0 5px 15px;}
@@ -81,7 +81,7 @@
 .top_info_box.adli_s .exp_text li {margin-bottom: 15px;line-height: 1.5em;}
 .top_info_box.adli_s .exp_text li:last-child .fb1 {margin-bottom: 15px;line-height: 1.5em;}
 .top_info_box.adli_s .info_btn_box{margin-top: 20px;}
-.ad_literacy .sec01 .round_box7 {padding: 20px;}
+.ad_literacy .sec01 .round_box7 {padding: 30px;}
 .ad_literacy .sec01 .round_box7 li {margin-bottom: 10px;}
 .ad_literacy .sec01 .round_box7 li:last-child {margin-bottom: 0;}
 
@@ -116,5 +116,29 @@
 .gun_academy .ac_list .ac_info_box a {width: 100%;text-align: center;border: 1px solid #ddd;padding: 10px;margin-top: 10px;border-radius: 10px;}
 
 
+/* 학습동아리 소개 */
+.ed_club_define .sec01 .round_box7 {padding: 30px;}
+.ed_club_define .sec01 .round_box7 li {margin-bottom: 10px;}
+.ed_club_define .sec01 .round_box7 li:last-child {margin-bottom: 0;}
+.ed_club_define .sec01 .round_box7 li span {margin-right:7px;}
 
+.ed_club_define .sec02 > ul > li {padding-left: 40px;position: relative;}
+.ed_club_define .sec02 > ul > li::after {content: '';position: absolute;top: 50%;margin-top: -40px;left: 0;width: 80px;height: 80px; background: url(/_KOR/img/etiq_01.png) center center no-repeat #fff;border-radius: 50%;box-shadow: 6px 8px 14px 2px rgb(0,0,0,.05);}
+.ed_club_define .sec02 .in_box {padding: 30px 30px 30px 70px;border: 1px solid #ddd;margin-bottom: 20px;}
+.ed_club_define .sec02 .in_box .subtitle_2 {font-weight: 500;margin-bottom: 10px;}
 
+/* 학습동아리 현황 */
+.ed_club_cur .sec01 .round_box7 {padding: 30px;}
+.ed_club_cur .sec01 .round_box7 li {margin-bottom: 10px;}
+.ed_club_cur .sec01 .round_box7 li:last-child {margin-bottom: 0;}
+.ed_club_cur .con_box02 {margin-top: 20px;}
+
+/* 행복학습센터 소개 */
+.study_center .top_info_box {padding:50px}
+.study_center .top_info_box::after {display: none;}
+.study_center .top_info_box .box_wrap {width: 60%;}
+.study_center .top_info_box .box_wrap .exp_text {margin-bottom: 30px;line-height: 1.5em;}
+.study_center .top_info_box .box_wrap .add_dot {font-size: 0.938em;margin: 7px 0;}
+.study_center .top_info_box .box_wrap li {margin-bottom: 20px;}
+.study_center .top_info_box .box_wrap li:last-child {margin-bottom: 0;}
+.study_center .top_info_box .box_wrap .info_btn_box {border-top: 1px dashed #ddd;padding-top: 20px;}
