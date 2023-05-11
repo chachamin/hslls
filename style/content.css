@@ -142,3 +142,27 @@
 .study_center .top_info_box .box_wrap li {margin-bottom: 20px;}
 .study_center .top_info_box .box_wrap li:last-child {margin-bottom: 0;}
 .study_center .top_info_box .box_wrap .info_btn_box {border-top: 1px dashed #ddd;padding-top: 20px;}
+
+/* 행복학습센터 현황 */
+.study_center_list .sec01 {position: relative;}
+.study_center_list .sec01 .bg_gray2 {padding: 10px 15px 10px 30px;position: absolute;top: -5px;left: 280px;font-size: 0.875em;border-radius: 5px;}
+.study_center_list .sec01 .bg_gray2::after {content: '';display: block;width: 20px;height: 20px;background: url(../img/findWay_ico.png) no-repeat center;position: absolute;top: 7px;left: 10px;}
+.study_center_list .sec01 .map_move {padding-left: 20px;position: relative;}
+.study_center_list .sec01 .map_move::after {content: '';display: block;width: 20px;height: 20px;background:url(../img/findWay_ico.png) no-repeat center; position: absolute;top: 0;left: 0;}
+
+/* 찾아가는 평생학습 강좌 소개 */
+.delivery_ed_intro .sec01 .list_box {flex-wrap: wrap;justify-content: space-between;}
+.delivery_ed_intro .sec01 .list_box > li {width: 49%;margin-bottom: 20px;border: 1px dashed #ddd;padding: 20px 15px 20px 80px;min-height: 140px;position: relative;}
+.delivery_ed_intro .sec01 .list_box > li::after {content:'';display: block;width: 50px;height: 50px;background: gold;border-radius: 50%;position: absolute;top: 23px;left: 20px;}
+.delivery_ed_intro .sec01 .list_box .in_box .subtitle_2 {font-weight: 500;margin-bottom: 10px;}
+.delivery_ed_intro .sec01 .list_box .in_box p {margin-bottom: 7px;}
+.delivery_ed_intro .sec01 .list_box .in_box > ul > li {font-size: 0.875em;}
+
+/* 찾아가는 평생학습 프로그램안내 */
+.delivery_ed_pro .sec01 .list_box {flex-wrap: wrap;}
+.delivery_ed_pro .sec01 .list_box > li {width: 49%;margin-right: 2%;border: 1px solid #ddd;border-radius: 15px;padding: 30px;margin-bottom: 20px;}
+.delivery_ed_pro .sec01 .list_box > li:nth-child(2n) {margin-right: 0;}
+.delivery_ed_pro .sec01 .list_box .in_box {position: relative;}
+.delivery_ed_pro .sec01 .list_box .in_box .subtitle_2 {font-weight: 500;padding-left: 40px; padding-bottom: 10px;border-bottom: 1px dashed #ddd;margin-bottom: 15px;}
+.delivery_ed_pro .sec01 .list_box .in_box > ul > li {width: 50%;mar} 
+
