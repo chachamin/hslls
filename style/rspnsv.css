@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@media (max-width: 1440px){
+    /* 기본 */
+	.inner{width:100%;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}	
+	#header.fixed{top:0}
+	.logo_box,.main_sec03 .main_sns .tit{left:20px}
+	#gnb .dep2Wrap .dep2tit{padding-left:20px;}
+	#footer .inner .f_top{padding-left:20px;}
+	.loca_nav{right:24px;bottom:24px;}
+
+    /* 메인 */
+    #header, .logo_box .symbol {height: 80px;}
+    #gnb,.tnb{display:none;}	
+	#header #mMenu{display:block;}
+    .quick_nav {display: none;}
+}
+
+@media (max-width: 1280px){
+    /* 기본 */
+	.inner{width:100%;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}	
+	#header.fixed{top:0}
+	.logo_box, .tit{left:20px}
+	#gnb .dep2Wrap .dep2tit{padding-left:20px;}
+	#footer .inner .f_top{padding-left:20px;}
+	.loca_nav{right:24px;bottom:24px;}
+
+    body,html{font-size:15px;
+        -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+        -ms-text-size-adjust : none;  /* IE */
+        -moz-text-size-adjust : none;  /* 파이어폭스 */
+        -o-text-size-adjust : none;  /* 오페라 구버전 */
+    }
+}
+
+@media (max-width: 1140px){
+    /* 메인 */
+    .main_slide_wrap {padding:80px 1.25rem;}
+    .main_slide_wrap > .dp_flex {flex-wrap: wrap;}
+    .main_slide_wrap > .dp_flex > div {width: 100%;}
+    .main_slide_wrap .box_l {padding-right: 0;margin-bottom: 30px;min-height: auto;}
+    .main_slide_wrap .box_l .menu_link {display: flex;flex-wrap: wrap;}
+    .main_slide_wrap .box_l .menu_link li {width: calc(100% / 3);padding: 1%;margin-bottom: 0;}
+    .main_slide_wrap .box_l .menu_link li.row_br a {padding: 27px 10px 0 94px;}
+
+    .scroll_ico {display: none;}
+
+    .news_wrap {flex-wrap: wrap;}
+    .news_wrap > div {width: 100% !important;}
+    .news_wrap .news_box {margin-bottom: 30px;}
+    .news_wrap .allim_b {height: auto;}
+
+    .related_wrap .rel_box {flex-wrap: wrap;}
+    .rel_box .rel_tit {width: 100%;margin-bottom: 10px;}
+    .rel_box .site_list {width: 100%;}
+}
+
+@media (max-width: 1024px){
+    /* 메인 */
+    .news_wrap {padding-top: 50px;}
+    .related_wrap {margin-top: 50px;}
+    .rel_box .site_list li {width: 20%;padding: 10px;}
+    .rel_box .site_list li a {border: 1px solid #838383;border-radius: 7px;padding: 10px 5px;}
+    .rel_box .site_list li::after {display: none;}
+}
+
+@media (max-width: 960px){
+    .main_slide_wrap .main_tit .fb3 {font-size: 2.813em;}
+    .main_slide_wrap {padding: 40px 1.25rem;}
+    .main_slide_wrap .main_tit .fb1 {margin-top: 10px;}
+    .main_slide_wrap .box_l .menu_link li.row_br a {padding: 17px 10px 0 94px;}
+
+    .allim_b .al_sd .item_box {padding: 0 0 0 10px;}
+
+    .rel_box .site_list {flex-wrap: wrap;}
+    .rel_box .site_list li {width: 25%;}
+    .rel_box .site_list li a {padding: 10px 20px;}
+}
+
+@media (max-width: 768px){
+    .main_slide_wrap .main_tit .fb3 {font-size: 2.5em;}
+    .main_slide_wrap .box_l .menu_link li a{padding: 20px 10px 20px 70px;height: auto;font-size: 1em;}
+    .main_slide_wrap .box_l .menu_link li a::after {transform: scale(0.8);top: 16%;left: 10px;}
+    .main_slide_wrap .box_l .menu_link li.row_br a {padding: 10px 10px 12px 70px;}
+    
+    .lecture_tab_box .search_a {display: none;}
+
+    .news_list li .ne_tit {width: 80%;}
+    .news_list li .ne_date {width: 20%;}
+    .rel_box .site_list li {width: 50%;padding: 5px;font-size: 0.938em;}
+}
+
+@media (max-width: 680px){
+    .logo_box a img {height: 35px;}
+    .main_slide_wrap .main_tit .fb3 {font-size: 2em;}
+
+    .f_wrap {padding-top: 30px;padding-bottom: 20px;}
+    #footer .inner .f_top{flex-wrap: wrap;justify-content: center;}
+    .f_top .f_logo {margin-bottom: 20px;margin-right: 0;}
+    .f_box .f_link {justify-content: center;}
+    .f_bottom {text-align: center;}
+}
+
+@media (max-width: 480px){
+    .main_slide_wrap .main_tit .fb3 {font-size: 1.625em;}
+    .main_slide_wrap .box_l .menu_link li {width: calc(100% / 2);}
+
+    .le_tabs > li >a.tab_link {display: none;}
+    .lecture_tab_box .btn_more {right: 16px;left: unset;}
+    .news_list li .ne_tit {width: 75%;}
+    .news_list li .ne_date {padding-right: 0;width: 25%;}
+
+    .rel_box .site_list li {width: 100%;padding: 0;margin-bottom: 5px;}
+
+    #footer .inner .f_top {padding: 0 0 10px 0;}
+    #footer .inner .f_top .f_logo a {height: 35px;}
+    #footer .inner .f_top .f_logo img {height: 35px;}
+    .f_top .f_box .f_info {font-size: 0.938em;}
+    .f_bottom {font-size: 0.938em;}
+}

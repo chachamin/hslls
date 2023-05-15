@@ -15,24 +15,24 @@ $(document).ready(function(){
 		responsive: [
 
 			{
-			  breakpoint: 1025,
+			  breakpoint: 1000,
 			  settings: {	
 
-				slidesToShow: 3
+				slidesToShow: 2
 
 			  }
 			},
 			{
 			  breakpoint: 769,
 			  settings: {			  
-				slidesToShow: 3
+				slidesToShow: 2
 			  }
 			},
 			{
 			  breakpoint: 620,
 			  settings: {			  
 				autoplay: true,
-				slidesToShow: 1.7
+				slidesToShow: 1
 
 			  }
 			}
@@ -57,7 +57,32 @@ $(document).ready(function(){
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			infinite: true,
-			cssEase: 'linear'
+			cssEase: 'linear',
+			responsive: [
+
+				{
+				  breakpoint: 1000,
+				  settings: {	
+	
+					slidesToShow: 2
+	
+				  }
+				},
+				{
+				  breakpoint: 769,
+				  settings: {			  
+					slidesToShow: 2
+				  }
+				},
+				{
+				  breakpoint: 620,
+				  settings: {			  
+					autoplay: true,
+					slidesToShow: 1
+	
+				  }
+				}
+			  ]
 			
 		}).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 		$('.current').text(nextSlide + 1);
@@ -179,6 +204,51 @@ $(document).ready(function(){
 			t.parent('li').addClass('active');
 		}
 	}
+
+	// -------------------------- mGnb 열기 --------------------------
+	$("#mMenu").click(function(){
+		$("#mGnb").css("display","block");
+		$("#mGnb").animate({right: 0}, 300);
+		$("#dimed").fadeIn(300);
+	});
+
+// -------------------------- mGnb 메뉴 열기닫기  --------------------------
+	$(".mDepth1 > li > a").click(function(){
+		$(".mDepth1 > li > a").removeClass("active");
+		$(".mDepth2 li").removeClass("active");
+		var mDepth2 = $(this).siblings("ul").css("display");
+		if( mDepth2 == "block" ) {
+			$(this).siblings("ul").slideUp(300);
+		} else {
+			$(this).addClass("active");
+			$(".mDepth2").slideUp(300);
+			$(this).siblings("ul").slideDown(300);
+		}
+	});
+	/*mGnb menu*/
+	$(".mDepth2 > li > a").click(function(){
+		$(".mDepth2 > li > a").removeClass("active");
+		$(".mDepth3 li").removeClass("active");
+		var mDepth3 = $(this).siblings("ul").css("display");
+		if( mDepth3 == "block" ) {
+			$(this).siblings("ul").slideUp(300);
+		} else {
+			$(this).addClass("active");
+			$(".mDepth3").slideUp(300);
+			$(this).siblings("ul").slideDown(300);
+			$(this).siblings("ul").find("li").addClass("active");
+		}
+	});
+
+// -------------------------- gotop top bottom --------------------------
+
+	$(".loca_nav .top").click(function(){
+		$("html, body").animate({scrollTop:0}, 500);
+	});
+	$('.loca_nav .bottom').click(function() {
+	    $('body,html').animate({scrollTop: $(document).height()}, 500);
+    return false;
+	});
 
 	// -------------------------- 스킵네비 포커스잡아주기--------------------------
     $("#skipNavi > a").click(function(){
@@ -353,4 +423,36 @@ $(function(){
 		$("body").attr("style",'');
 	});
 });	
+
+// -------------------------- mGnb close --------------------------
+function mGnbClose() {
+	$("#mGnb").animate({right: "-80%"}, 300);
+	$("#mGnb").fadeOut(300);
+	$("#dimed").fadeOut(300);
+	$(".mDepth2 > li > a").removeClass("active");
+	$(".mDepth3").slideUp(300);
+}
+
+//  -------------------------- mGnb display --------------------------
+$( window ).resize(function() {
+	var winWidth = $( window ).width();
+	if(winWidth >= 1024) {
+		mGnbClose();
+		} else {
+		mGnbClose();
+		}
+});
+
+
+// -------------------------- 상단으로 나타나기 --------------------------
+$( window ).scroll( function() {
+	if ( $( this ).scrollTop() > 360 ) {
+		$( '.loca_nav' ).fadeIn(500);
+	} else {
+		$( '.loca_nav' ).fadeOut(500);
+	}
+
+} );
+
+
 
