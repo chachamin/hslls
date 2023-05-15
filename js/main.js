@@ -455,4 +455,29 @@ $( window ).scroll( function() {
 } );
 
 
+$(function(){
+	//조례
+		function close_accordion_section() {
+			$('.ordinance_tit').removeClass('active');
+			$('.ordinance_con').stop().slideUp(500);
+		}
+	
+		$('.ordinance_tit').click(function(e) {
+			// Grab current anchor value
+	
+			if($(this).is('.active')) {
+				close_accordion_section();
+			}else {
+				close_accordion_section();
+	
+				// Add active class to section title
+				$(this).addClass('active');
+				// Open up the hidden content panel
+				$(this).next('.ordinance_con').stop().slideDown(500).addClass('open'); 
+			}
+	
+			e.preventDefault();
+		});
+	});
+
 
