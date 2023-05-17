@@ -285,17 +285,19 @@
 .hs_lll.pg_02 .sec03 .in_box .s_tit {font-size: 1.125em;margin:30px 0 10px 0;}
 .hs_lll.pg_02 .sec03 .in_box .tit {font-size: 1.375em;font-weight: 500;}
 
-.hs_lll.pg_02 .sec04 .dp_flex {justify-content: space-between;flex-wrap: wrap;margin-top: 45px;}
-.hs_lll.pg_02 .sec04 .dp_flex > li {width: 31%;border-radius: 15px;margin-bottom: 60px;min-height: 170px;padding:60px 20px 0 20px}
-.hs_lll.pg_02 .sec04 .dp_flex > li .tit_box {width: 100%;padding: 15px 0;border-radius: 20px;position: absolute;top: -95px;left: 50%;transform: translateX(-50%);text-align: center; color: #fff;}
-.hs_lll.pg_02 .sec04 .dp_flex > li .tit_box .fb1{margin-top: 5px;}
-.hs_lll.pg_02 .sec04 .dp_flex > li.tag_01 .tit_box {background: #00999A;}
-.hs_lll.pg_02 .sec04 .dp_flex > li.tag_02 .tit_box {background: #fa8320;}
-.hs_lll.pg_02 .sec04 .dp_flex > li.tag_03 .tit_box {background: #5086A8;}
-.hs_lll.pg_02 .sec04 .dp_flex > li.tag_01{border: 2px solid #00999A;}
-.hs_lll.pg_02 .sec04 .dp_flex > li.tag_02{border: 2px solid  #fa8320;}
-.hs_lll.pg_02 .sec04 .dp_flex > li.tag_03{border: 2px solid #5086A8;}
-.hs_lll.pg_02 .sec04 .dp_flex > li .text_box .add_dot {margin-bottom: 10px;}
+.hs_lll.pg_02 .sec04 .con_box {justify-content: space-between;flex-wrap: wrap;margin-top: 45px;}
+.hs_lll.pg_02 .sec04 .list_box {width: 31%;}
+.hs_lll.pg_02 .sec04 .list_box > ul > li {border-radius: 15px;margin-bottom: 60px;min-height: 170px;padding:60px 20px 0 20px}
+
+.hs_lll.pg_02 .sec04 .list_wrap > li .tit_box {width: 100%;padding: 15px 0;border-radius: 20px;position: absolute;top: -95px;left: 50%;transform: translateX(-50%);text-align: center; color: #fff;}
+.hs_lll.pg_02 .sec04 .list_wrap > li .tit_box .fb1{margin-top: 5px;}
+.hs_lll.pg_02 .sec04 .list_wrap > li.tag_01 .tit_box {background: #00999A;}
+.hs_lll.pg_02 .sec04 .list_wrap > li.tag_02 .tit_box {background: #fa8320;}
+.hs_lll.pg_02 .sec04 .list_wrap > li.tag_03 .tit_box {background: #5086A8;}
+.hs_lll.pg_02 .sec04 .list_wrap > li.tag_01{border: 2px solid #00999A;}
+.hs_lll.pg_02 .sec04 .list_wrap > li.tag_02{border: 2px solid  #fa8320;}
+.hs_lll.pg_02 .sec04 .list_wrap > li.tag_03{border: 2px solid #5086A8;}
+.hs_lll.pg_02 .sec04 .list_wrap > li .text_box .add_dot {margin-bottom: 10px;}
 
 /* 조례 */
 .hs_lll.pg_03 .sec01 .con_box.dp_flex {justify-content: end;padding: 15px;border-radius: 15px;background-color: #fafafa;border:none;}
