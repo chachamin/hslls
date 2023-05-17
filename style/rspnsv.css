@@ -288,6 +288,14 @@
 	.bo_form_wrap.teacher_form table td.address button {width:100%;}
 	.bo_form_wrap.teacher_form .license_ls tr:first-child th:not(.license_title) {display:none;}
 
+	/*학습동아리신청*/
+	.ed_club .sec02 .step_arrow ul {flex-wrap: wrap;}
+	.ed_club .sec02 .step_arrow li {width: 100%;padding: 130px 20px 40px 20px;}
+	.ed_club .sec02 .step_arrow li::after {top: unset;bottom:-25px;right: 50px;transform: rotate(90deg);}
+	.ed_club .top_info_box .info_btn_box {flex-wrap: wrap;}
+	.ed_club .top_info_box .info_btn_box a {width: 100%;}
+
+
 	/*화순장학회*/
 	.school_ed.pg_04 .top_info_box {background-image:none;padding:30px;}
 	.school_ed.pg_04 .top_info_box .box_wrap {width:100%;}
