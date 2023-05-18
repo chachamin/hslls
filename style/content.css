@@ -326,6 +326,7 @@
 .hs_lll.pg_03 .sec04 {margin-top: 30px;}
 .hs_lll.pg_03 .sec05 {margin-top: 30px;}
 .hs_lll.pg_03 .sec06 {margin-top: 30px;}
+.hs_lll.pg_03 .sec07 {margin-top: 30px;}
 
 /* 사이트맵 */
 .sitemap_list {flex-wrap: wrap;}
@@ -342,7 +343,18 @@
 .sitemap_list .dep3 li > a:hover {font-weight: 500;}
 .sitemap_list .dep3 li:last-child {margin-bottom: 0;}
 
+/* 교육지원 사업 */
+.school_ed.pg_01 .add_dot::after {top: 6px;transform: unset;}
+.school_ed.pg_01 .round_box7 .dash {margin-top: 7px;}
+.school_ed.pg_01 .round_box7 .dash li {margin-bottom: 5px;}
+.school_ed.pg_01 .basic_tb1 {margin: 10px 0 25px 0;}
 
-
+.school_ed.pg_01 .round_box3 p[class*="support_"] {padding-left: 30px;position: relative;font-size: 1.125em;margin-bottom: 10px;}
+.school_ed.pg_01 .round_box3 p[class*="support_"]::after {content: '1';display: block;width: 25px;height: 25px;border-radius: 50%;font-size: 1em;font-weight: 600;background: #435fa5;line-height: 25px;text-align: center;color: #fff;position: absolute;top: -1px;left: 0;}
+.school_ed.pg_01 .round_box3 p.support_02::after {content: '2';}
+.school_ed.pg_01 .round_box3 p.support_03::after {content: '3';}
+.school_ed.pg_01 .round_box3 p.support_04::after {content: '4';}
+.school_ed.pg_01 .round_box3 p.support_05::after {content: '5';}
+.school_ed.pg_01 .round_box3 .text {padding-left: 20px;}
 
 
