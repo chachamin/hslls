@@ -1,4 +1,21 @@
 $(document).ready(function(){
+
+	// popup_sd
+	$('.popup_sd').slick({
+		autoplay: true,
+		dots: true,
+		pauseOnDotsHover: false,
+		pauseOnHover: false,
+		speed: 600,
+		arrows: false,
+		autoplaySpeed: 4000,
+		fade: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		cssEase: 'linear'
+	});
+
     // 메인-강좌정보
 	$('.sd_le_main').slick({
 		autoplay:true,

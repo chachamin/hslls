@@ -5,6 +5,11 @@
 .wrapper{width:100%;overflow:hidden}
 .inner{position:relative;width:1400px;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box}
 #container{width:100%;overflow:hidden}
+#container{width:100%;overflow:hidden}
+.slick-controls{z-index:10;}
+.slick-nav a{font-size:0;z-index:40}
+.slick-nav a.slick-play{display:none;}
+
 
 /* ----------- header ----------- */
 
@@ -225,8 +230,6 @@
 .log_wrap.master .id_wrap input.master_id {border-radius: 10px 10px 0 0;}
 .log_wrap.master .id_wrap input.master_pw {border-radius: 0 0 10px 10px;border-top: transparent;}
 .log_wrap.master .login_btn {width: 40%;padding: 15px;margin-top: 20px;}
-
-
 
 @keyframes scale-in-center {
   0% {

@@ -267,10 +267,70 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="mgnb_bottom">
+                    <ul class="hs_site_list">
+                        <li>
+                            <a href="#">화순군청</a>
+                        </li>
+                        <li>
+                            <a href="#">열린도서관</a>
+                        </li>
+                        <li>
+                            <a href="#">청춘들락</a>
+                        </li>
+                        <li>
+                            <a href="#">화순군농업기술센터</a>
+                        </li>
+                    </ul>
+                </div>
                 <a href="javascript:mGnbClose();" class="mGnbClose"><span class="mn_close"></span>모바일 메뉴 닫기</a>
             </div>
         </header>
         <!-- end : #header -->	
+
+        <div id="pop">
+			<div class="in_box inner">
+				<div class="pop_title">
+                    <p class="font_g">화순군 평생학습관 <span>소식</span></p>
+                </div>
+				<div class="popup_list_wp">
+					<div id="popup_list" class="popup_sd">
+						<div class="item">
+                            <div class="pop_count"><%=vo.getPopup_title()%> <span class="ml4"><strong><%=i+1%>/<%=popupList.size()%></strong></span></div>
+                            <div class="pop_img">
+                                <a href="none" ><img src="img/pop_test.jpg" alt=""></a>
+                            </div>		
+                        </div>
+						<div class="item">
+                            <div class="pop_count"><%=vo.getPopup_title()%> <span class="ml4"><strong><%=i+1%>/<%=popupList.size()%></strong></span></div>
+                            <div class="pop_img">
+                                <a href="none" ><img src="img/test.jpg" alt=""></a>
+                            </div>		
+                        </div>
+					</div>
+					<div class="slick-controls ">
+						<div class="slick-nav ">
+							<a href="javascript:void(0)" class="slick-prev" title="이전">PREV</a>
+							<a href="javascript:void(0)" class="slick-next" title="다음">NEXT</a>
+							<a href="javascript:void(0)" class="slick-stop" title="멈춤">STOP</a>
+							<a href="javascript:void(0)" class="slick-play" title="재생">PLAY</a>
+						</div>							
+					</div>	
+                    <form method="post" action="" name="pop_form">
+                        <div class="popup_bottom">
+                            <div class="popup_unit_bottom">						
+                                <span id="check" class="chkbox">
+                                    <input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
+                                    <label for="chkday">오늘 하루동안 보지 않기</label>
+                                </span>
+                                <a class="btn btn_s" href="#none" id="close">닫기&nbsp;&nbsp;<img src="img/popup_colse.png"></a>							
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+
 
         <div id="container" class="main_container">
             <section class="main_sec01">
@@ -812,4 +872,60 @@
         </div>
     </div>
 </body>
+<script>
+    // 쿠키 가져오기
+    var getCookie = function (cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
+    // 24시간 기준 쿠키 설정하기  
+    var setCookie = function (cname, cvalue, exdays) {
+        var todayDate = new Date();
+        todayDate.setTime(todayDate.getTime() + (exdays*24*60*60*1000));    
+        var expires = "expires=" + todayDate.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    var couponClose = function(){
+        if($("input[name='chkbox']").is(":checked") == true){
+            setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
+        }
+        $("#pop").css("display","none");
+		$("#pop").addClass('off');
+    }
+    
+    $(document).ready(function(){
+        cookiedata = document.cookie;
+        console.log(cookiedata);
+        if(cookiedata.indexOf("close=Y")<0){
+            $("#pop").css("display","block");
+			$("#pop").removeClass('off');
+            $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+            $('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지
+                event.preventDefault();
+                event.stopPropagation();
+
+                return false;
+            });
+        }else{
+	        $("#pop").css("display","none");
+			$("#pop").addClass('off');
+        }
+        $("#close").click(function(){
+            couponClose();
+            $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제
+            $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능   
+        });
+    });
+
+
+
+</script>
 </html>
