@@ -123,6 +123,7 @@
 .gun_academy .ac_list .move_video{position: absolute;bottom: 30px;right: 30px;padding: 7px 40px 7px 15px;border: 1px solid #c4c4c4;border-radius: 7px;opacity: 0;transition: all 0.5s ease;}
 .gun_academy .ac_list .move_video::after {content: '';display: block;width: 20px;height: 20px;background: url(../img/sub_ir.png) -210px -51px no-repeat;position: absolute;top: 7px;right: 15px;}
 .gun_academy .ac_list > li > a:hover .move_video {opacity: 1;}
+.gun_academy .ac_list > li > a:hover .move_video.no_video {background-color: #f4f4f4;color: #a4a4a4;}
 
 
 /* 학습동아리 소개 */

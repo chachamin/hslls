@@ -95,7 +95,17 @@
     .main_slide_wrap .box_l .menu_link li a::after {transform: scale(0.8);top: 16%;left: 10px;}
     .main_slide_wrap .box_l .menu_link li.row_br a {padding: 10px 10px 12px 70px;}
     
-    .lecture_tab_box .search_a {display: none;}
+	/* 강좌정보 슬라이드 */
+    /* .lecture_tab_box .search_a {display: none;} 230522*/
+	.box_r .lecture_tab_box {min-height: 510px;}
+	.lecture_tab_box .search_a {right: 0;}
+	.le_tabs {top: 43px;padding-left: 16px;}
+	.main_slide_wrap .box_r::after {top: 110px;}
+	.lecture_tab_box .btn_more {left:124px;top: -2px;}
+	.lecture_tab_box .btn_more a {width: 30px;height: 30px;background: url(../img/main_ir.png) -134px -146px no-repeat #004adf;}
+	.le_tabs > li {width: 32%;}
+	.le_tabs > li >a.tab_link {width: 100%;}
+
 
     .news_list li .ne_tit {width: 80%;}
     .news_list li .ne_date {width: 20%;}
@@ -106,6 +116,7 @@
     .board_search {padding: 20px;}
 	.board_search .search_form {width:100%;}
 	#svisualLayout .titleWrap h2 {font-size:2rem;}
+
     /* 강좌검색 수강신청 */
     .le_list .board_search .search_form {width: 100%;}
     .le_list_table {table-layout: auto;border-top: none;}
@@ -113,8 +124,11 @@
     .le_list_table thead {display: none;}
     .le_list_table tbody tr {display: flex;flex-wrap: wrap;border: 1px solid #ddd;border-radius: 14px;text-align: left;padding: 16px;margin-bottom: 12px;align-items: center;}
     .le_list_table tbody td {display: block;border: 0;width: auto;padding: 6px 4px;text-align: left;width: 100%;}
+	.le_list_table tr td:nth-child(3) {padding: 6px 4px;}
     .le_list_table tr td span.time {font-size: 1em;}
     .le_list_table tr td span.mo_vis {display: block;float: left;font-weight: 500;margin-right: 10px;}
+	.le_list_table tr td.mo_vis_btn {display: block;padding-top: 20px;}
+	.le_list_table tr td.mo_vis_btn a {border: 1px solid #ddd;border-radius: 10px;padding: 10px 0;text-align: center;background: #f6f6f6;}
 
 	/* 온라인평생학습 */
 	.bogal_list > ul > li {width: calc((100% - 64px) / 2);}
@@ -194,8 +208,11 @@
     .main_slide_wrap .main_tit .fb3 {font-size: 1.625em;}
     .main_slide_wrap .box_l .menu_link li {width: calc(100% / 2);}
 
-    .le_tabs > li >a.tab_link {display: none;}
-    .lecture_tab_box .btn_more {right: 16px;left: unset;}
+	/* 강좌정보 슬라이드 */
+	.le_tabs {padding-right: 11px;}
+	.lecture_tab_box .search_a {min-width: 230px;}
+	.lecture_tab_box .search_a input {min-width: 190px;}
+
     .news_list li .ne_tit {width: 75%;}
     .news_list li .ne_date {padding-right: 0;width: 25%;}
 
@@ -212,12 +229,19 @@
 	/* 팝업 */
 	#pop .pop_title .font_g {font-size: 2em;}
 
+	/* 모바일메뉴 */
+	#mGnb .mgnb_bottom .hs_site_list {flex-wrap: wrap;}
+	#mGnb .mgnb_bottom .hs_site_list li {width: 49%;margin-bottom: 7px;}
+
 	/* 서브 */
 	.screen_unit {display:none;}
+	.breadcrumb_wp .inner{position: relative;}
+	.breadcrumb_wp .inner::after {content: '';display: block;width: 20px;height: 50px;background: url(../img/breadcrumb_ovf.png) no-repeat center;position: absolute;top: -1px;right: 1.25rem;z-index: 10;}
 	.breadcrumb_wp .breadcrumb li a {font-size:0.875em;padding-right: 25px;margin-right:4px;}
 	.breadcrumb_wp .breadcrumb li.home a span {transform: scale(0.8);}
-	.breadcrumb > ul >li:nth-child(4) {display:none;}
-	.breadcrumb_wp .breadcrumb li:nth-child(3) a:after {display:none;}
+	.breadcrumb {width: 100%;overflow-x: scroll;overflow-y: hidden;position: relative;}
+	.breadcrumb ul {width: 200%;}
+
 
 	.top_info_box {padding: 30px 30px 30px 70px;}
 	.top_info_box::after {width:40px;height:40px;background-size:cover;left:20px;}
@@ -258,6 +282,7 @@
 	.board_wrap .basic_tb1 thead {display:none;}
 	.board_wrap .basic_tb1 tr {display: flex;flex-wrap: wrap;text-align: left;align-items: center;border-bottom:1px solid #ddd;padding:10px 0;}
 	.board_wrap .basic_tb1 td {display: block;border: 0;padding: 6px 4px;text-align: left;}
+	.board_wrap .basic_tb1 td:first-child {display: none;}
 	.board_wrap .basic_tb1 td:nth-child(2) {width:100%;font-weight:600;font-size:1.063em;}
 
 	/* 학습기관현황 */
@@ -299,6 +324,17 @@
 	.bo_form_wrap.teacher_form table td.address input {width:100%;}
 	.bo_form_wrap.teacher_form table td.address button {width:100%;}
 	.bo_form_wrap.teacher_form .license_ls tr:first-child th:not(.license_title) {display:none;}
+
+	.board_wrap .basic_tb1.teacher_listT {border-top: none;}
+	.board_wrap .basic_tb1.teacher_listT tr {display: flex;flex-wrap: wrap;text-align: left;align-items: center;border:1px solid #ddd;padding:16px;margin-bottom: 12px;border-radius: 15px;}
+	.board_wrap .basic_tb1.teacher_listT td {display: block;border: 0;padding: 6px 4px;text-align: left;}
+	.board_wrap .basic_tb1.teacher_listT td:first-child {display: none;}
+	.board_wrap .basic_tb1.teacher_listT td:nth-child(2) {width:100%;font-weight:600;font-size:0.875em;text-align: right;padding: 0;}
+	.board_wrap .basic_tb1.teacher_listT td:nth-child(3) {width:100%;font-weight:600;font-size:1.25em;padding-bottom: 15px;border-bottom: 1px dashed #ddd;margin-bottom:15px}
+	.board_wrap .basic_tb1.teacher_listT td:nth-child(4) {position: relative;}
+	.board_wrap .basic_tb1.teacher_listT td:nth-child(4)::after {content: '';display: block;width: 1px;height: 15px;background: #bdbdbd;position: absolute;right: -2px;top: 8px;}
+	.basic_tb1.teacher_listT tr td.mo_vis_btn {width:100%;display: block;padding-top: 20px;}
+	.basic_tb1.teacher_listT tr td.mo_vis_btn a {width:100%; border: 1px solid #ddd;border-radius: 10px;padding: 10px 0;text-align: center;background: #f6f6f6;}
 
 	/*학습동아리신청*/
 	.ed_club .sec02 .step_arrow ul {flex-wrap: wrap;}
@@ -350,15 +386,24 @@
     .news_list .latest .date_box {width: 30%;}
     .news_list .latest .text_box {width: 70%;}
 
+	/* 강좌정보 슬라이드 */
+	.main_slide_wrap .box_r::after {top: 160px;}
+	.lecture_tab_box .search_a {top: 43px;width: 100%;padding: 0 16px;}
+	.lecture_tab_box .search_a input {width: calc(100% - 20px);}
+	.le_tabs {top: 90px;}
+	.le_tabs .tab_cont {top: 35px;}	
+	.box_r .lecture_tab_box {min-height: 540px;}
+
+
     /* 서브 */
 	.tab_box2 .tab li {width:25%;margin-bottom:10px;}
 
     /* 강좌검색 수강신청 */
-    .board_search input.s_text_a {width: 78%;border-radius:10px 0 0 10px;}
-	.board_search .btn_search {font-size:1rem;width:20%;}
+    .board_search input.s_text_a {width: 100%;border-radius:10px;margin-bottom: 4px;}
+	.board_search .btn_search {font-size:1rem;width:100%;border-radius:10px;}
 
-	.le_list .board_search input.s_text_a {width: 78%;border-radius:10px 0 0 10px;}
-	.le_list .board_search .btn_search {font-size:1rem;width:20%;}
+	.le_list .board_search input.s_text_a {width: 100%;border-radius:10px;margin-bottom: 4px;}
+	.le_list .board_search .btn_search {font-size:1rem;width:100%;border-radius:10px;}
 
 	/*성인문해교육*/
 	.top_info_box.adli_s .info_btn_box {flex-wrap:wrap;}
@@ -384,12 +429,15 @@
     .main_slide_wrap .main_tit .fb3 {font-size: 1.5em;}
     .le_sd_wrap .slick-nav a.slick-prev, .le_sd_wrap .slick-nav a.slick-next {width: 45px;height: 45px;}
     .le_sd_wrap .slick-nav a.slick-next {background-position: -60px -146px;}
-    .le_sd_wrap .slick-nav a.slick-prev {background-position: -1px -146px;}
-    .box_r .lecture_tab_box {min-height: 450px;}
-    .le_tabs .tab_cont {top: 35px;}
-    .le_tabs .le_sd .item_box {padding:0;}
-    .lecture_tab_box .btn_more {right: 2px;}
+    .le_sd_wrap .slick-nav a.slick-prev {background-position: -1px -146px;}    
     .box_r .lecture_tab_box > .font_g {padding-left: 0;}
+
+	/* 강좌정보 슬라이드 */
+	.le_tabs .le_sd .item_box {padding: 0 0;}
+	.le_tabs {padding-left: 0;padding-right: 0;}
+	.lecture_tab_box .search_a {padding: 0 0;}
+	.lecture_tab_box .search_a .btn_search {right: 4px;}
+	.lecture_tab_box .btn_more {left: 105px;}
 
     .news_list .latest .text_box {padding:0 5px;}
     .news_list li:not(.latest) {font-size: 0.875em;}

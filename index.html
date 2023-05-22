@@ -925,6 +925,21 @@
         });
     });
 
+    $(document).ready(function(){
+        cookiedata = document.cookie;
+        console.log(cookiedata);
+        if(cookiedata.indexOf("close=Y")<0){
+            $("#pop").css("display","block");
+			$("#pop").removeClass('off');
+        }else{
+	        $("#pop").css("display","none");
+			$("#pop").addClass('off');
+        }
+        $("#close").click(function(){
+            couponClose();
+        });
+    });
+
 
 
 </script>

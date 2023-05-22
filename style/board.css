@@ -83,6 +83,9 @@ table .subject_l {text-align: left !important;}
 .le_list_table tr td span.fb2{color: #562cb5;}
 
 .le_list_table tr td span.mo_vis {display: none;}
+.le_list_table tr td.mo_vis_btn {display: none;}
+
+.le_list_table tr td:nth-child(3) {padding: 15px 10px;}
 
 .le_list_table tr.no_le td {padding: 30px 0;}
 
@@ -185,6 +188,8 @@ table .subject_l {text-align: left !important;}
 /* 강사현황 */
 .board_table_wrap .work {padding:5px 10px;border-radius: 15px;background: #388f2c; color: #fff;}
 .board_table_wrap .break {padding:5px 10px;border-radius: 15px;background: #969696; color: #fff;}
+
+.basic_tb1.teacher_listT tr td.mo_vis_btn {display: none;}
 
 /* 강사현황 뷰 리스트*/
 .le_more_btn a {width: 100%;padding: 15px;background: #f5f5f5;border-radius: 10px;display: flex;justify-content: center;}
