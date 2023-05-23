@@ -263,6 +263,12 @@
 .hs_lll.pg_01 .in_box .history_lll li span {margin-right: 10px;}
 
 /* 비전 및 추진전략 */
+.hs_lll.pg_02 .subtitle_1 {font-size: 1.625em;text-align: center;}
+.hs_lll.pg_02 .subtitle_1 img {margin: 0 10px;}
+.hs_lll.pg_02 .sec02 {margin-top: 70px;}
+.hs_lll.pg_02 .sec03 {margin-top: 70px;}
+.hs_lll.pg_02 .sec04 {margin-top: 70px;}
+
 .hs_lll.pg_02 .sec01 .add_dot {margin-bottom: 15px;font-size: 1.125em;font-weight: 500;}
 .hs_lll.pg_02 .sec01 .vision {margin-bottom: 30px;border-radius: 15px 15px 35px 15px;background: url(../img/sim.png) no-repeat right center #f2f6fe; padding: 40px 0;text-align: center;}
 .hs_lll.pg_02 .sec01 .vision p {font-weight: 600;font-family:"GmarketSans", "sans-serif";font-size: 2.2em;color: #562cb5;}
